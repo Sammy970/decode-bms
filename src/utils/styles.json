@@ -1,0 +1,1528 @@
+{
+  "styles": [
+    {
+      "id": "5340090739233308580",
+      "padding": "16,0,16,0",
+      "margin": "0,0,0,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,16,0,16",
+        "margin": "0,0,0,0"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "8468485909260217330",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 0.6667,
+        "margin": "0,0,0,0",
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      },
+      "textContainer": {
+        "padding": "4,0,0,0",
+        "elevation": 1
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-8176765359127332365",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#333333",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "7785389241114011138",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,2,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-6370600663246037609",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#555555",
+      "lineMargin": "0,0,2,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-7802096846920430298",
+      "aspectRatio": 5.0,
+      "padding": "0,0,0,0",
+      "margin": "4,0,0,0",
+      "type": "metaImage",
+      "border": {
+        "cornerRadius": "0,0,0,0",
+        "opacity": 1.0,
+        "width": 0.0
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "contentMode": "aspectFill"
+    },
+    {
+      "id": "-2508167891279110657",
+      "padding": "16,0,16,0",
+      "margin": "0,0,0,0",
+      "type": "widget",
+      "background": {
+        "color": "#F2F5F9"
+      },
+      "headerContainer": {
+        "padding": "0,16,0,16",
+        "margin": "0,0,0,0"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-5885048223099781650",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#333333",
+      "lineMargin": "0,0,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "1888174483702750214",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#555555",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "3992010252865913946",
+      "padding": "16,0,32,0",
+      "margin": "0,0,0,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,16,0,16",
+        "margin": "0,0,0,0"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "2040790894673779911",
+      "padding": "16,0,16,0",
+      "margin": "0,0,0,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,16,0,16"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "580671950667129662",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 1.45,
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "981900565152682651",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#666666",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "8429547327424683329",
+      "padding": "16,0,16,0",
+      "margin": "0,0,0,0",
+      "type": "widget",
+      "background": {
+        "color": "#2B3148"
+      },
+      "headerContainer": {
+        "padding": "0,16,0,16",
+        "margin": "0,0,16,0"
+      },
+      "cardsContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "6034184666535124515",
+      "padding": "0,0,16,0",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 0.6667,
+        "padding": "0,0,0,0",
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "12,12,12,12",
+          "opacity": 1.0,
+          "width": 0.0
+        },
+        "widthpct": 50.0
+      },
+      "textContainer": {
+        "padding": "0,0,0,16",
+        "elevation": 1
+      },
+      "shimmer": false,
+      "alignVertical": "top",
+      "imageVerticalAlignment": "bottom",
+      "direction": "ltr",
+      "affordance": {
+        "width": 56.0,
+        "aspectRatio": 1.0,
+        "padding": "16,16,16,16",
+        "margin": "0,0,0,16",
+        "background": {
+          "color": "BMS_BLUE"
+        },
+        "border": {
+          "cornerRadius": "4,4,4,4",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      }
+    },
+    {
+      "id": "-4509315044828611300",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-5103615806931264414",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-6553488546853243560",
+      "type": "text",
+      "font": "title",
+      "fontColor": "#ffffff",
+      "lineMargin": "0,0,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "8335147091351660677",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#ffffff",
+      "lineMargin": "0,0,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "730510250647356683",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#ffffff",
+      "lineMargin": "0,0,16,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2893295442276044474",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#ffffff",
+      "lineMargin": "0,0,2,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "4716264250466023227",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#222222",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-3341313454232951668",
+      "type": "text",
+      "font": "subtitle-regular",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "center",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "4132622510035248234",
+      "margin": "16,0,16,0",
+      "type": "button",
+      "background": {
+        "color": "#F84464"
+      },
+      "minHeight": 40.0,
+      "border": {
+        "cornerRadius": "8,8,8,8"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "widthpct": 100.0
+    },
+    {
+      "id": "7119461345226941667",
+      "padding": "16,0,16,0",
+      "margin": "16,0,0,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,16,0,16",
+        "margin": "0,0,0,0"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "widget-scroll-cta-01",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#DC3558",
+      "lineMargin": "0,0,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-title-01",
+      "type": "text",
+      "font": "title",
+      "fontColor": "#222222",
+      "lineMargin": "8,4,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-subtitle-01",
+      "type": "text",
+      "font": "tiny-medium",
+      "fontColor": "#DC354B",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-title-01",
+      "type": "text",
+      "font": "subtitle-regular",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-subtitle-01",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#666666",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-1591248389725590333",
+      "type": "text",
+      "font": "overline",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2759634946264020090",
+      "padding": "2,4,2,4",
+      "type": "tag",
+      "background": {
+        "color": "#DC354B"
+      },
+      "border": {
+        "cornerRadius": "2,2,2,2",
+        "opacity": 1.0,
+        "width": 0.0
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "vcp-header-title-01",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#222222",
+      "lineMargin": "4,4,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "tooltip-style",
+      "padding": "12,12,12,12",
+      "margin": "0,16,0,16",
+      "type": "tooltip",
+      "background": {
+        "color": "#3E6EEA",
+        "opacity": 1.0
+      },
+      "font": "extra-tiny-medium",
+      "fontColor": "#ffffff",
+      "border": {
+        "cornerRadius": "24,24,24,24"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "1731161595816223629",
+      "aspectRatio": 2.0,
+      "padding": "32,16,32,16",
+      "type": "widget",
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "7086961849741629663",
+      "type": "card",
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-3274594736959734990",
+      "aspectRatio": 6.0,
+      "margin": "16,0,0,0",
+      "type": "widget",
+      "cardsContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-9146536873934355770",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 6.0,
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "0,0,0,0",
+          "opacity": 1.0,
+          "width": 0.0
+        },
+        "widthpct": 100.0
+      },
+      "textContainer": {
+        "elevation": 1
+      },
+      "border": {
+        "cornerRadius": "0,0,0,0",
+        "opacity": 1.0,
+        "width": 0.0
+      },
+      "shimmer": false,
+      "alignVertical": "top",
+      "imageVerticalAlignment": "bottom",
+      "direction": "ltr"
+    },
+    {
+      "id": "2040790894673779911",
+      "padding": "16,0,16,0",
+      "margin": "0,0,0,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,16,0,16"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-1669035614408230846",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 1.0,
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "4,4,4,4",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-8176765359127332365",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#333333",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "981900565152682651",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#666666",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "5330088296335279945",
+      "type": "widget",
+      "background": {
+        "color": "#ffffff"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-4278837926783854781",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 3.0,
+        "shimmer": false
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "7119461345226941667",
+      "padding": "16,0,16,0",
+      "margin": "16,0,0,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,16,0,16",
+        "margin": "0,0,0,0"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "8468485909260217330",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 0.6667,
+        "margin": "0,0,0,0",
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      },
+      "textContainer": {
+        "padding": "4,0,0,0",
+        "elevation": 1
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-3820565965690871482",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#3E6EEA",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "7785389241114011138",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,2,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-6370600663246037609",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#555555",
+      "lineMargin": "0,0,2,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-7802096846920430298",
+      "aspectRatio": 5.0,
+      "padding": "0,0,0,0",
+      "margin": "4,0,0,0",
+      "type": "metaImage",
+      "border": {
+        "cornerRadius": "0,0,0,0",
+        "opacity": 1.0,
+        "width": 0.0
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "contentMode": "aspectFill"
+    },
+    {
+      "id": "widget-scroll-cta-01",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#DC3558",
+      "lineMargin": "0,0,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-title-01",
+      "type": "text",
+      "font": "title",
+      "fontColor": "#222222",
+      "lineMargin": "8,4,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-subtitle-01",
+      "type": "text",
+      "font": "tiny-medium",
+      "fontColor": "#DC354B",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-title-01",
+      "type": "text",
+      "font": "subtitle-regular",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-subtitle-01",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#666666",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-1591248389725590333",
+      "type": "text",
+      "font": "overline",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2759634946264020090",
+      "padding": "2,4,2,4",
+      "type": "tag",
+      "background": {
+        "color": "#DC354B"
+      },
+      "border": {
+        "cornerRadius": "2,2,2,2",
+        "opacity": 1.0,
+        "width": 0.0
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "vcp-header-title-01",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#222222",
+      "lineMargin": "4,4,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "tooltip-style",
+      "padding": "12,12,12,12",
+      "margin": "0,16,0,16",
+      "type": "tooltip",
+      "background": {
+        "color": "#3E6EEA",
+        "opacity": 1.0
+      },
+      "font": "extra-tiny-medium",
+      "fontColor": "#ffffff",
+      "border": {
+        "cornerRadius": "24,24,24,24"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "7119461345226941667",
+      "padding": "16,0,16,0",
+      "margin": "16,0,0,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,16,0,16",
+        "margin": "0,0,0,0"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "8468485909260217330",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 0.6667,
+        "margin": "0,0,0,0",
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      },
+      "textContainer": {
+        "padding": "4,0,0,0",
+        "elevation": 1
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-8176765359127332365",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#333333",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "7785389241114011138",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,2,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-6370600663246037609",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#555555",
+      "lineMargin": "0,0,2,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-7802096846920430298",
+      "aspectRatio": 5.0,
+      "padding": "0,0,0,0",
+      "margin": "4,0,0,0",
+      "type": "metaImage",
+      "border": {
+        "cornerRadius": "0,0,0,0",
+        "opacity": 1.0,
+        "width": 0.0
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "contentMode": "aspectFill"
+    },
+    {
+      "id": "3992010252865913946",
+      "padding": "16,0,32,0",
+      "margin": "0,0,0,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,16,0,16",
+        "margin": "0,0,0,0"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-2508167891279110657",
+      "padding": "16,0,16,0",
+      "margin": "0,0,0,0",
+      "type": "widget",
+      "background": {
+        "color": "#F2F5F9"
+      },
+      "headerContainer": {
+        "padding": "0,16,0,16",
+        "margin": "0,0,0,0"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-5885048223099781650",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#333333",
+      "lineMargin": "0,0,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "1888174483702750214",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#555555",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2040790894673779911",
+      "padding": "16,0,16,0",
+      "margin": "0,0,0,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,16,0,16"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "580671950667129662",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 1.45,
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2539177250022568885",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#666666",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "5340090739233308580",
+      "padding": "16,0,16,0",
+      "margin": "0,0,0,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,16,0,16",
+        "margin": "0,0,0,0"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "6034184666535124515",
+      "padding": "0,0,16,0",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 0.6667,
+        "padding": "0,0,0,0",
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "12,12,12,12",
+          "opacity": 1.0,
+          "width": 0.0
+        },
+        "widthpct": 50.0
+      },
+      "textContainer": {
+        "padding": "0,0,0,16",
+        "elevation": 1
+      },
+      "shimmer": false,
+      "alignVertical": "top",
+      "imageVerticalAlignment": "bottom",
+      "direction": "ltr",
+      "affordance": {
+        "width": 56.0,
+        "aspectRatio": 1.0,
+        "padding": "16,16,16,16",
+        "margin": "0,0,0,16",
+        "background": {
+          "color": "BMS_BLUE"
+        },
+        "border": {
+          "cornerRadius": "4,4,4,4",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      }
+    },
+    {
+      "id": "-4509315044828611300",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-5103615806931264414",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-6553488546853243560",
+      "type": "text",
+      "font": "title",
+      "fontColor": "#ffffff",
+      "lineMargin": "0,0,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "8335147091351660677",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#ffffff",
+      "lineMargin": "0,0,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "730510250647356683",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#ffffff",
+      "lineMargin": "0,0,16,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2893295442276044474",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#ffffff",
+      "lineMargin": "0,0,2,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "4716264250466023227",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#222222",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-3341313454232951668",
+      "type": "text",
+      "font": "subtitle-regular",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "center",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "4132622510035248234",
+      "margin": "16,0,16,0",
+      "type": "button",
+      "background": {
+        "color": "#F84464"
+      },
+      "minHeight": 40.0,
+      "border": {
+        "cornerRadius": "8,8,8,8"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "widthpct": 100.0
+    },
+    {
+      "id": "981900565152682651",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#666666",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "widget-scroll-cta-01",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#DC3558",
+      "lineMargin": "0,0,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-title-01",
+      "type": "text",
+      "font": "title",
+      "fontColor": "#222222",
+      "lineMargin": "8,4,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-subtitle-01",
+      "type": "text",
+      "font": "tiny-medium",
+      "fontColor": "#DC354B",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-title-01",
+      "type": "text",
+      "font": "subtitle-regular",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-subtitle-01",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#666666",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-1591248389725590333",
+      "type": "text",
+      "font": "overline",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2759634946264020090",
+      "padding": "2,4,2,4",
+      "type": "tag",
+      "background": {
+        "color": "#DC354B"
+      },
+      "border": {
+        "cornerRadius": "2,2,2,2",
+        "opacity": 1.0,
+        "width": 0.0
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "vcp-header-title-01",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#222222",
+      "lineMargin": "4,4,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "tooltip-style",
+      "padding": "12,12,12,12",
+      "margin": "0,16,0,16",
+      "type": "tooltip",
+      "background": {
+        "color": "#3E6EEA",
+        "opacity": 1.0
+      },
+      "font": "extra-tiny-medium",
+      "fontColor": "#ffffff",
+      "border": {
+        "cornerRadius": "24,24,24,24"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "5340090739233308580",
+      "padding": "16,0,16,0",
+      "margin": "0,0,0,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,16,0,16",
+        "margin": "0,0,0,0"
+      },
+      "cardsContainer": {
+        "padding": "0,16,0,16",
+        "margin": "16,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "5207475275481226612",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 0.66667,
+        "margin": "0,0,0,0",
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1,
+          "width": 0
+        }
+      },
+      "textContainer": {
+        "padding": "4,0,0,0",
+        "elevation": 1
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "7987316217275958678",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#000000",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "7785389241114011138",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,2,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "4716264250466023227",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#222222",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "1888174483702750214",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#555555",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-7802096846920430298",
+      "aspectRatio": 5,
+      "padding": "0,0,0,0",
+      "margin": "4,0,0,0",
+      "type": "metaImage",
+      "border": {
+        "cornerRadius": "0,0,0,0",
+        "opacity": 1,
+        "width": 0
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "contentMode": "aspectFill"
+    },
+    {
+      "id": "5603708271604843483",
+      "padding": "0,0,6,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,16,0,16",
+        "margin": "0,0,6,0"
+      },
+      "cardsContainer": {
+        "padding": "0,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-3669474706481655019",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 1,
+        "shimmer": false
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-4248498540950589586",
+      "aspectRatio": 2,
+      "padding": "0,0,16,0",
+      "type": "widget",
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "7086961849741629663",
+      "type": "card",
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-1044580892530786092",
+      "aspectRatio": 5,
+      "padding": "32,16,16,16",
+      "type": "widget",
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "widget-scroll-cta-01",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#DC3558",
+      "lineMargin": "0,0,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-title-01",
+      "type": "text",
+      "font": "title",
+      "fontColor": "#222222",
+      "lineMargin": "8,4,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-subtitle-01",
+      "type": "text",
+      "font": "tiny-medium",
+      "fontColor": "#DC354B",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-title-01",
+      "type": "text",
+      "font": "subtitle-regular",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-subtitle-01",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#666666",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-1591248389725590333",
+      "type": "text",
+      "font": "overline",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2759634946264020090",
+      "padding": "2,4,2,4",
+      "type": "tag",
+      "background": {
+        "color": "#DC354B"
+      },
+      "border": {
+        "cornerRadius": "2,2,2,2",
+        "opacity": 1,
+        "width": 0
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "vcp-header-title-01",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#222222",
+      "lineMargin": "4,4,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "tooltip-style",
+      "padding": "12,12,12,12",
+      "margin": "0,16,0,16",
+      "type": "tooltip",
+      "background": {
+        "color": "#3E6EEA",
+        "opacity": 1
+      },
+      "font": "extra-tiny-medium",
+      "fontColor": "#ffffff",
+      "border": {
+        "cornerRadius": "24,24,24,24"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    }
+  ]
+}

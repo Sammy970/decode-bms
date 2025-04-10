@@ -1,6 +1,6 @@
 import { motion, useAnimation, useMotionValue } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { styles } from "../../sample.json";
+import { styles } from "@/utils/styles.json";
 import Card from "./Card";
 // import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -64,8 +64,6 @@ const getStyle = (styleId: string, styles: any[]) => {
 const getTextStyle = (styleId: string, styles: any[]) => {
   const style = getStyle(styleId, styles);
   if (!style) return {};
-
-  console.log("style", style);
 
   const fontSizeMap: { [key: string]: number } = {
     "subtitle-large": 18,
