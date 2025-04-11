@@ -1,4 +1,5 @@
 import "./App.css";
+import Advertisement from "./components/common/Advertisement";
 import CarouselComp from "./components/common/CarouselComp";
 import Flexbox from "./components/common/Flexbox";
 import HorizontalScroll from "./components/common/HorizontalScroll";
@@ -2834,12 +2835,134 @@ const TVOD_SHOWCASE = {
   sliderDuration: 3000,
 };
 
+const AdsV1 = [
+  {
+    adtype: "DISPLAY",
+    reqid: "7577a3b7-755c-42db-95f2-7b92c85627a5",
+    adunitcode: "homepage_carousel3_mweb",
+    size: "SIZE_FLUID",
+    assets: {
+      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744284713627_eastereggstravaganzaapp.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/events/easter-eggs-travaganza/ET00440688") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=7577a3b7-755c-42db-95f2-7b92c85627a5");\n\t\t  \tif(\'homepage_carousel3_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel3_mweb");\n            }\n          window.open("https://in.bookmyshow.com/events/easter-eggs-travaganza/ET00440688");\n        }\n      }\n    </script>\n  </body>\n</html>',
+      duration: 3000,
+      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=7577a3b7-755c-42db-95f2-7b92c85627a5",
+      position: 3,
+    },
+    ext: {
+      thirdpartyclicktracker: "",
+      thirdpartyimpressiontracker: "",
+    },
+  },
+  {
+    adtype: "DISPLAY",
+    reqid: "76450f29-43a0-4732-8771-c0a7bd059a40",
+    adunitcode: "homepage_carousel4_mweb",
+    size: "SIZE_FLUID",
+    assets: {
+      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744182522797_revisedisl1080x540.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/specials/isl-2025-final-mohun-bagan-vs-bengaluru-fc/ET00441032") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=76450f29-43a0-4732-8771-c0a7bd059a40");\n\t\t  \tif(\'homepage_carousel4_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel4_mweb");\n            }\n          window.open("https://in.bookmyshow.com/specials/isl-2025-final-mohun-bagan-vs-bengaluru-fc/ET00441032");\n        }\n      }\n    </script>\n  </body>\n</html>',
+      duration: 3000,
+      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=76450f29-43a0-4732-8771-c0a7bd059a40",
+      position: 4,
+    },
+    ext: {
+      thirdpartyclicktracker: "",
+      thirdpartyimpressiontracker: "",
+    },
+  },
+  {
+    adtype: "DISPLAY",
+    reqid: "1dc5f610-3ac9-48ed-ba05-96dbf5f585be",
+    adunitcode: "homepage_carousel2_mweb",
+    size: "SIZE_FLUID",
+    assets: {
+      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1742619378575_my11app.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://my11circleapp.onelink.me/5r0c?af_xp=custom&pid=m1c_mediabuy_blinkdigital_bookmyshow&af_click_lookback=7d&af_dp=my11circle%3A%2F%2F&advertising_id=%7Bgaid%7D&is_retargeting=true&af_reengagement_window=7d&af_inactivity_window=3d&c=open_brand_ps_android_panindia_newCh&af_pmod_priority=equal&af_pmod_lookback_window=7d&af_channel=m1c_mediabuy_blinkdigital_bookmyshow&utm_source=m1c_mediabuy_blinkdigital_bookmyshow&af_adset=get4999bonuscash_IPL&utm_medium=get4999bonuscash_IPL&utm_campaign=open_brand_ps_android_panindia_newCh&utm_content=scratchcard_na_Eng&af_ad=scratchcard_na_Eng") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=1dc5f610-3ac9-48ed-ba05-96dbf5f585be");\n\t\t  \tif(\'homepage_carousel2_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel2_mweb");\n            }\n          window.open("https://my11circleapp.onelink.me/5r0c?af_xp=custom&pid=m1c_mediabuy_blinkdigital_bookmyshow&af_click_lookback=7d&af_dp=my11circle%3A%2F%2F&advertising_id=%7Bgaid%7D&is_retargeting=true&af_reengagement_window=7d&af_inactivity_window=3d&c=open_brand_ps_android_panindia_newCh&af_pmod_priority=equal&af_pmod_lookback_window=7d&af_channel=m1c_mediabuy_blinkdigital_bookmyshow&utm_source=m1c_mediabuy_blinkdigital_bookmyshow&af_adset=get4999bonuscash_IPL&utm_medium=get4999bonuscash_IPL&utm_campaign=open_brand_ps_android_panindia_newCh&utm_content=scratchcard_na_Eng&af_ad=scratchcard_na_Eng");\n        }\n      }\n    </script>\n  </body>\n</html>',
+      duration: 3000,
+      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=1dc5f610-3ac9-48ed-ba05-96dbf5f585be",
+      position: 2,
+    },
+    ext: {
+      thirdpartyclicktracker: "",
+      thirdpartyimpressiontracker: "",
+    },
+  },
+  {
+    adtype: "DISPLAY",
+    reqid: "cd2efec5-3df9-45bc-897b-b95a0578befa",
+    adunitcode: "homepage_carousel5_mweb",
+    size: "SIZE_FLUID",
+    assets: {
+      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743491492474_summer2024appbanner.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/explore/activities?categories=amusement-parks") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=cd2efec5-3df9-45bc-897b-b95a0578befa");\n\t\t  \tif(\'homepage_carousel5_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel5_mweb");\n            }\n          window.open("https://in.bookmyshow.com/explore/activities?categories=amusement-parks");\n        }\n      }\n    </script>\n  </body>\n</html>',
+      duration: 3000,
+      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=cd2efec5-3df9-45bc-897b-b95a0578befa",
+      position: 5,
+    },
+    ext: {
+      thirdpartyclicktracker: "",
+      thirdpartyimpressiontracker: "",
+    },
+  },
+  {
+    adtype: "DISPLAY",
+    reqid: "0092a77a-83d1-4223-837f-fecf28a19930",
+    adunitcode: "homepage_carousel1_mweb",
+    size: "SIZE_FLUID",
+    assets: {
+      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743774952460_horizontalbannersweb1080.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/events/hsbc-living-legends-hari-se-hari-tak/ET00440255") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=0092a77a-83d1-4223-837f-fecf28a19930");\n\t\t  \tif(\'homepage_carousel1_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel1_mweb");\n            }\n          window.open("https://in.bookmyshow.com/events/hsbc-living-legends-hari-se-hari-tak/ET00440255");\n        }\n      }\n    </script>\n  </body>\n</html>',
+      duration: 3000,
+      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=0092a77a-83d1-4223-837f-fecf28a19930",
+      position: 1,
+    },
+    ext: {
+      thirdpartyclicktracker: "",
+      thirdpartyimpressiontracker: "",
+    },
+  },
+];
+
+const AdsV2 = [
+  {
+    adtype: "DISPLAY",
+    reqid: "ad0c7d0f-1091-42f3-be46-486dfe1572c5",
+    adunitcode: "prod_hp_banner_mweb",
+    size: "SIZE_FLUID",
+    assets: {
+      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744290758851_chhorri2slug.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=ad0c7d0f-1091-42f3-be46-486dfe1572c5");\n\t\t  \tif(\'prod_hp_banner_mweb\'){\n              window.parent.BMSSDK.fireImpression("prod_hp_banner_mweb");\n            }\n          window.open("");\n        }\n      }\n    </script>\n  </body>\n</html>',
+      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=ad0c7d0f-1091-42f3-be46-486dfe1572c5",
+      position: 1,
+    },
+    ext: {
+      thirdpartyclicktracker: "",
+      thirdpartyimpressiontracker: "",
+    },
+  },
+];
+
+const AdsV3 = [
+  {
+    adtype: "DISPLAY",
+    reqid: "6d54d895-d825-4aab-9cdd-b4b0c988cd38",
+    adunitcode: "herowidget_mweb",
+    size: "SIZE_FLUID",
+    assets: {
+      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1726040029956_playcardapplatest.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/play-credit-card?ad=herowidget") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=6d54d895-d825-4aab-9cdd-b4b0c988cd38");\n\t\t  \tif(\'herowidget_mweb\'){\n              window.parent.BMSSDK.fireImpression("herowidget_mweb");\n            }\n          window.open("https://in.bookmyshow.com/play-credit-card?ad=herowidget");\n        }\n      }\n    </script>\n  </body>\n</html>',
+      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=6d54d895-d825-4aab-9cdd-b4b0c988cd38",
+      position: 1,
+    },
+    ext: {
+      thirdpartyclicktracker: "",
+      thirdpartyimpressiontracker: "",
+    },
+  },
+];
+
 function App() {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center">
       <Header />
       <HorizontalScroll data={ICD_TOP_NAV_MENU_MOBILE_VARIANT} />
+      <Advertisement ads={AdsV1} />
+      <Advertisement ads={AdsV2} />
       <HorizontalScroll data={TOP_MOVIES_MOBILE} />
+      <Advertisement ads={AdsV3} />
       {LayoutScreenWidgets.map((widget) => {
         if (widget.type === "flexbox") {
           return (

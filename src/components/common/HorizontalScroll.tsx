@@ -206,7 +206,7 @@ const HorizontalScroll = ({
       ) : null}
 
       {/* Custom Carousel with Framer Motion */}
-      <div className="relative pt-2 px-4 w-full">
+      <div className="relative pt-2 px-1.5 w-full">
         {/* {canScrollLeft && (
           <button
             onClick={() => handleScroll("left")}
