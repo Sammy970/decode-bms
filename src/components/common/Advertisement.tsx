@@ -54,9 +54,12 @@ const Advertisement: React.FC<AdvertisementProps> = ({ ads }) => {
   // No need for carousel if only one image
   if (imageUrls.length <= 1) {
     return imageUrls.length === 1 ? (
-      <div className="w-full" style={{
-        padding: "10px 16px 10px 16px"
-      }}>
+      <div
+        className="w-full"
+        style={{
+          padding: "10px 16px 10px 16px",
+        }}
+      >
         <img src={imageUrls[0]} alt="Advertisement" className="w-full h-auto" />
       </div>
     ) : null;
@@ -92,8 +95,8 @@ const Advertisement: React.FC<AdvertisementProps> = ({ ads }) => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="absolute left-0 rounded-r-md rounded-l-none top-1/2 -translate-y-1/2 z-10 w-[40px] h-[40px] bg-black/50 hover:bg-black/50 active:bg-black/50 border-none p-1" />
-        <CarouselNext className="absolute right-0 rounded-l-md rounded-r-none top-1/2 -translate-y-1/2 z-10 w-[40px] h-[40px] bg-black/50 hover:bg-black/50 active:bg-black/50 border-none p-1" />
+        <CarouselPrevious className="absolute left-0 rounded-r-md rounded-l-none top-1/2 -translate-y-1/2 z-10 w-[42px] h-[50px] bg-black/50 hover:bg-black/50 active:bg-black/50 border-none p-1" />
+        <CarouselNext className="absolute right-0 rounded-l-md rounded-r-none top-1/2 -translate-y-1/2 z-10 w-[42px] h-[50px] bg-black/50 hover:bg-black/50 active:bg-black/50 border-none p-1" />
       </Carousel>
       <div className="flex justify-center gap-2 absolute bottom-4 left-0 right-0">
         {imageUrls.map((_, index) => (

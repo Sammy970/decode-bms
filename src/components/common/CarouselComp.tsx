@@ -3,6 +3,15 @@ import { motion, useAnimation, useMotionValue } from "framer-motion";
 import Card from "./Card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { styles } from "@/utils/styles.json";
+import {
+  Carousel,
+  CarouselApi,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const TVOD_SHOWCASE = {
   id: "TVOD_SHOWCASE",
@@ -1085,6 +1094,7 @@ const getCarouselContainerStyle = (data: any): React.CSSProperties => {
           .join(" ")
       : undefined,
     width: "100%",
+    position: "relative",
   };
 };
 
@@ -1168,116 +1178,20 @@ const getTextStyle = (styleId: string): React.CSSProperties => {
 };
 
 const CarouselComp = ({ data = TVOD_SHOWCASE }) => {
-  const [width, setWidth] = useState(0);
-  const [isDragging, setIsDragging] = useState(false);
-  const [autoScrollEnabled, setAutoScrollEnabled] = useState(true);
-  const [hovering, setHovering] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
 
-  const carouselRef = useRef<HTMLDivElement>(null);
-  const controls = useAnimation();
-  const x = useMotionValue(0);
-
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-
-  // Calculate carousel dimensions on first render and window resize
-  useEffect(() => {
-    const calculateWidth = () => {
-      if (carouselRef.current) {
-        setWidth(
-          carouselRef.current.scrollWidth - carouselRef.current.offsetWidth
-        );
-      }
-    };
-
-    calculateWidth();
-    window.addEventListener("resize", calculateWidth);
-    return () => window.removeEventListener("resize", calculateWidth);
-  }, [data.cards]);
-
-  // Update active index and scroll button visibility when x changes
-  useEffect(() => {
-    const updateState = () => {
-      const currentX = x.get();
-      // Calculate which item is currently active
-      if (carouselRef.current) {
-        const itemWidth = carouselRef.current.offsetWidth;
-        const index = Math.round(Math.abs(currentX) / itemWidth);
-        setActiveIndex(Math.min(index, data.cards.length - 1));
-      }
-
-      setCanScrollLeft(currentX < 0);
-      setCanScrollRight(currentX > -width);
-    };
-
-    const unsubscribe = x.onChange(updateState);
-    return () => unsubscribe();
-  }, [x, width, data.cards.length]);
-
-  // Auto-scroll logic
-  useEffect(() => {
-    let interval: ReturnType<typeof setInterval>;
-
-    if (autoScrollEnabled && !isDragging && !hovering && width > 0) {
-      interval = setInterval(() => {
-        const nextIndex = (activeIndex + 1) % data.cards.length;
-        scrollToIndex(nextIndex);
-      }, data.sliderDuration || 3000);
+  React.useEffect(() => {
+    if (!api) {
+      return;
     }
 
-    return () => clearInterval(interval);
-  }, [
-    autoScrollEnabled,
-    isDragging,
-    hovering,
-    activeIndex,
-    data.cards.length,
-    data.sliderDuration,
-  ]);
+    setCurrent(api.selectedScrollSnap() + 1);
 
-  const handleDragStart = () => {
-    setIsDragging(true);
-    setAutoScrollEnabled(false);
-  };
-
-  const handleDragEnd = () => {
-    setIsDragging(false);
-
-    // Snap to the nearest slide
-    if (carouselRef.current) {
-      const itemWidth = carouselRef.current.offsetWidth;
-      const currentX = x.get();
-      const targetX = -Math.round(Math.abs(currentX) / itemWidth) * itemWidth;
-      controls.start({ x: targetX });
-    }
-
-    // Re-enable auto-scroll after a delay
-    setTimeout(() => setAutoScrollEnabled(true), 5000);
-  };
-
-  const scrollToIndex = (index: number) => {
-    if (carouselRef.current) {
-      const itemWidth = carouselRef.current.offsetWidth;
-      const targetX = -index * itemWidth;
-      controls.start({
-        x: targetX,
-        transition: { type: "spring", stiffness: 300, damping: 30 },
-      });
-    }
-  };
-
-  const handleScroll = (direction: "left" | "right") => {
-    const newIndex =
-      direction === "left"
-        ? Math.max(0, activeIndex - 1)
-        : Math.min(data.cards.length - 1, activeIndex + 1);
-
-    scrollToIndex(newIndex);
-    setAutoScrollEnabled(false);
-    // Re-enable auto-scroll after a delay
-    setTimeout(() => setAutoScrollEnabled(true), 5000);
-  };
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
 
   return (
     <div style={getCarouselContainerStyle(data)}>
@@ -1294,7 +1208,7 @@ const CarouselComp = ({ data = TVOD_SHOWCASE }) => {
       </div>
 
       {/* Carousel Container */}
-      <div
+      {/* <div
         style={getCardsContainerStyle(data)}
         onMouseEnter={() => setHovering(true)}
         onMouseLeave={() => setHovering(false)}
@@ -1302,10 +1216,10 @@ const CarouselComp = ({ data = TVOD_SHOWCASE }) => {
         {canScrollLeft && (
           <button
             onClick={() => handleScroll("left")}
-            className="absolute left-1 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full p-2 shadow-md"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black/50 rounded-r-none rounded-l-md p-2 shadow-md"
             aria-label="Previous slide"
           >
-            <ChevronLeft size={24} />
+            <ChevronLeft size={30} color="white" />
           </button>
         )}
 
@@ -1346,10 +1260,10 @@ const CarouselComp = ({ data = TVOD_SHOWCASE }) => {
         {canScrollRight && (
           <button
             onClick={() => handleScroll("right")}
-            className="absolute right-1 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full p-2 shadow-md"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black/50 rounded-r-none rounded-l-md p-2 shadow-md"
             aria-label="Next slide"
           >
-            <ChevronRight size={24} />
+            <ChevronRight size={30} color="white" />
           </button>
         )}
 
@@ -1372,6 +1286,54 @@ const CarouselComp = ({ data = TVOD_SHOWCASE }) => {
             ))}
           </div>
         )}
+      </div> */}
+
+      <Carousel
+        setApi={setApi}
+        opts={{
+          align: "start",
+          duration: 30,
+        }}
+        className="p-3"
+        plugins={[
+          Autoplay({
+            delay: 3000,
+            playOnInit: true,
+          }),
+        ]}
+      >
+        <CarouselContent className="">
+          {data.cards.map((card) => (
+            <CarouselItem key={card.id}>
+              <Card
+                ctaUrl={card.ctaUrl}
+                styleId={card.styleId}
+                imageUrl={card.image.url}
+                altText={card.image.altText}
+                text={card.text}
+                tags={card.tags}
+                metaImages={card.metaImages}
+                buttons={card.buttons}
+                type={card.type}
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="absolute left-0 rounded-r-md rounded-l-none top-1/2 -translate-y-1/2 z-10 w-[42px] h-[50px] bg-black/50 hover:bg-black/50 active:bg-black/50 border-none p-1" />
+        <CarouselNext className="absolute right-0 rounded-l-md rounded-r-none top-1/2 -translate-y-1/2 z-10 w-[42px] h-[50px] bg-black/50 hover:bg-black/50 active:bg-black/50 border-none p-1" />
+      </Carousel>
+
+      <div className="flex justify-center gap-2 absolute bottom-4 left-0 right-0">
+        {data.cards.map((_, index) => (
+          <button
+            key={index}
+            className={`w-2 h-2 rounded-full transition-colors ${
+              current === index + 1 ? "bg-white" : "bg-white/50"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+            onClick={() => api?.scrollTo(index)}
+          />
+        ))}
       </div>
     </div>
   );
