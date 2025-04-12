@@ -1,7 +1,9 @@
 import { motion, useAnimation, useMotionValue } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { styles } from "@/utils/styles.json";
+import { styles } from "@/utils/stylesV2.json";
 import Card from "./Card";
+import { fontSizeMap, fontWeightMap } from "@/utils/commonFunc";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 // import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface HorizontalScrollProps {
@@ -65,16 +67,6 @@ const getTextStyle = (styleId: string, styles: any[]) => {
   const style = getStyle(styleId, styles);
   if (!style) return {};
 
-  const fontSizeMap: { [key: string]: number } = {
-    "subtitle-large": 18,
-    "body-regular": 15,
-  };
-
-  const fontWeightMap: { [key: string]: number } = {
-    "subtitle-large": 500,
-    "body-regular": 400,
-  };
-
   return {
     color: style.fontColor,
     textAlign: style.horizontalAlignment,
@@ -131,14 +123,23 @@ const HorizontalScroll = ({
   const [_isDragging, setIsDragging] = useState(false);
   const controls = useAnimation();
   const x = useMotionValue(0);
-  const [_canScrollLeft, setCanScrollLeft] = useState(false);
-  const [_canScrollRight, setCanScrollRight] = useState(true);
+  const [scrollIndicatorEnabled, setScrollIndicatorEnabled] = useState(false);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
 
   // Organize cards into rows based on itemsPerRow
   const rows = [];
   for (let i = 0; i < cards.length; i += itemsPerRow) {
     rows.push(cards.slice(i, i + itemsPerRow));
   }
+
+  useEffect(() => {
+    if (String(data?.id).trim().includes("_WEB")) {
+      setScrollIndicatorEnabled(true);
+    } else {
+      setScrollIndicatorEnabled(false);
+    }
+  }, [data?.id]);
 
   useEffect(() => {
     if (carouselRef.current) {
@@ -168,22 +169,22 @@ const HorizontalScroll = ({
     setIsDragging(false);
   };
 
-  // const handleScroll = (direction: "left" | "right") => {
-  //   const scrollAmount = carouselRef.current?.offsetWidth || 0;
-  //   const currentX = x.get();
-  //   const newX =
-  //     direction === "left"
-  //       ? Math.min(0, currentX + scrollAmount * 0.8)
-  //       : Math.max(-width, currentX - scrollAmount * 0.8);
+  const handleScroll = (direction: "left" | "right") => {
+    const scrollAmount = carouselRef.current?.offsetWidth || 0;
+    const currentX = x.get();
+    const newX =
+      direction === "left"
+        ? Math.min(0, currentX + scrollAmount * 0.8)
+        : Math.max(-width, currentX - scrollAmount * 0.8);
 
-  //   controls.start({ x: newX });
-  // };
+    controls.start({ x: newX });
+  };
 
   return (
     <div style={getHorizontalScrollStyle(data, styles)} className="w-full">
       {/* Header Section */}
       {data.title || data.subtitle ? (
-        <div className="flex justify-between items-center px-5">
+        <div className="flex justify-between items-center">
           <div>
             <h2 className="text-xl font-semibold" style={titleStyle}>
               {data.title?.components[0]?.text || ""}
@@ -206,8 +207,8 @@ const HorizontalScroll = ({
       ) : null}
 
       {/* Custom Carousel with Framer Motion */}
-      <div className="relative pt-2 px-1.5 w-full">
-        {/* {canScrollLeft && (
+      <div className="relative pt-2 w-full">
+        {scrollIndicatorEnabled && canScrollLeft && (
           <button
             onClick={() => handleScroll("left")}
             className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full p-1 shadow-md"
@@ -215,7 +216,7 @@ const HorizontalScroll = ({
           >
             <ChevronLeft size={24} />
           </button>
-        )} */}
+        )}
 
         <div className="overflow-hidden">
           <motion.div
@@ -234,6 +235,8 @@ const HorizontalScroll = ({
               className="grid gap-y-4"
               style={{
                 display: "grid",
+                width: "100%",
+                height: "100%",
                 gridTemplateRows: `repeat(${rows.length}, auto)`,
                 gridAutoFlow: "column",
                 gridGap: `${data.verticalSpacing}px ${data.horizontalSpacing}px`,
@@ -243,13 +246,23 @@ const HorizontalScroll = ({
                 row.map((card) => (
                   <div
                     key={card.id}
-                    className={`w-[calc(${
-                      100 / (data.visibleItems || 2.5)
-                    }vw - ${data.horizontalSpacing * 2}px)]`}
                     style={{
-                      minWidth: `${96 / (data.visibleItems || 2.5)}vw`,
-                      maxWidth: "400px",
+                      minWidth: `${
+                        String(data.id).includes("_WEB")
+                          ? `${100 / 7}vw`
+                          : `${100 / (data.visibleItems || 1)}vw`
+                      }`,
+                      maxWidth: `${
+                        String(data.id).includes("_WEB")
+                          ? `${100 / itemsPerRow}vw`
+                          : "400px"
+                      }`,
+                      maxHeight: "100%",
                     }}
+                    // style={{
+                    //   minWidth: `${96 / (data.visibleItems || 2.5)}vw`,
+                    //   maxWidth: "400px",
+                    // }}
                   >
                     <Card
                       ctaUrl={card.ctaUrl}
@@ -268,7 +281,7 @@ const HorizontalScroll = ({
           </motion.div>
         </div>
 
-        {/* {canScrollRight && (
+        {scrollIndicatorEnabled && canScrollRight && (
           <button
             onClick={() => handleScroll("right")}
             className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full p-1 shadow-md"
@@ -276,7 +289,7 @@ const HorizontalScroll = ({
           >
             <ChevronRight size={24} />
           </button>
-        )} */}
+        )}
       </div>
     </div>
   );

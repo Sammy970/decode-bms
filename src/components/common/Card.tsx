@@ -1,4 +1,4 @@
-import { styles } from "@/utils/styles.json";
+import { styles } from "@/utils/stylesV2.json";
 
 interface CardProps {
   ctaUrl: string;
@@ -113,7 +113,7 @@ const Card = ({
   };
 
   return (
-    <a href={ctaUrl} style={{ textDecoration: "none" }}>
+    <a href={ctaUrl} style={{ textDecoration: "none" }} className="w-[100%]">
       {type === "horizontal" ? (
         <>
           <div
@@ -190,11 +190,11 @@ const Card = ({
                         ?.split(",")
                         .map((val) => `${val}px`)
                         .join(" "),
-                      width: buttonStyle?.widthpct
-                        ? `${buttonStyle.widthpct}%`
+                      width: (buttonStyle as any)?.widthpct
+                        ? `${(buttonStyle as any).widthpct}%`
                         : "auto",
                       textAlign: "center",
-                      height: buttonStyle?.minHeight,
+                      height: (buttonStyle as any)?.minHeight || "auto",
                       color: buttonStyle?.fontColor,
                       fontSize: fontSizeMap[String(buttonStyle?.font)],
                       fontWeight: fontWeightMap[String(buttonStyle?.font)],

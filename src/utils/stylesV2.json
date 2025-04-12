@@ -1,6 +1,911 @@
 {
   "styles": [
     {
+      "id": "-130514066956528765",
+      "aspectRatio": 12,
+      "padding": "40,0,40,0",
+      "type": "widget",
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "7086961849741629663",
+      "type": "card",
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "1013830832253216626",
+      "padding": "0,0,32,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,0,8,0"
+      },
+      "cardsContainer": {
+        "padding": "0,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-5155149432663030127",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 0.5882352941,
+        "margin": "0,0,8,0",
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1,
+          "width": 0
+        }
+      },
+      "textContainer": {
+        "padding": "4,0,0,0",
+        "margin": "4,0,0,0",
+        "elevation": 1
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "5663542403916329510",
+      "type": "text",
+      "font": "temp-header-xlarge",
+      "fontColor": "#333333",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "8359608758880464868",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2875984141546238944",
+      "type": "text",
+      "font": "body-large",
+      "fontColor": "#666666",
+      "lineMargin": "0,0,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-381721278589114633",
+      "type": "text",
+      "font": "body-large",
+      "fontColor": "#666666",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-880212916561276848",
+      "aspectRatio": 3.9,
+      "padding": "0,0,32,0",
+      "type": "widget",
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "3490268937677325035",
+      "padding": "48,0,48,0",
+      "type": "widget",
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "3060859398946935339",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 12,
+        "shimmer": false
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "widget-scroll-cta-01",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#DC3558",
+      "lineMargin": "0,0,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-title-01",
+      "type": "text",
+      "font": "title",
+      "fontColor": "#222222",
+      "lineMargin": "8,4,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-subtitle-01",
+      "type": "text",
+      "font": "tiny-medium",
+      "fontColor": "#DC354B",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-title-01",
+      "type": "text",
+      "font": "subtitle-regular",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-subtitle-01",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#666666",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "vcp-header-title-01",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#222222",
+      "lineMargin": "4,4,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "tooltip-style",
+      "padding": "12,12,12,12",
+      "margin": "0,16,0,16",
+      "type": "tooltip",
+      "background": {
+        "color": "#3E6EEA",
+        "opacity": 1
+      },
+      "font": "extra-tiny-medium",
+      "fontColor": "#ffffff",
+      "border": {
+        "cornerRadius": "24,24,24,24"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2473546218460240831",
+      "padding": "16,0,16,0",
+      "type": "widget",
+      "background": {
+        "color": "#2B3148"
+      },
+      "headerContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,0,8,0"
+      },
+      "cardsContainer": {
+        "padding": "0,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-1933164280007154362",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 0.6667,
+        "margin": "0,0,8,0",
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      },
+      "textContainer": {
+        "padding": "4,0,0,0",
+        "margin": "4,0,0,0",
+        "elevation": 1
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-2631502671078853998",
+      "type": "text",
+      "font": "title",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-7539328388024005469",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "4139901534416017552",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#ffffff",
+      "lineMargin": "0,0,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "7354667013117254526",
+      "type": "text",
+      "font": "body-large",
+      "fontColor": "#ffffff",
+      "lineMargin": "0,0,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "4613623615333230671",
+      "padding": "32,0,64,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,0,8,0"
+      },
+      "cardsContainer": {
+        "padding": "0,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "5159940007754894226",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 1.0,
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "5663542403916329510",
+      "type": "text",
+      "font": "temp-header-xlarge",
+      "fontColor": "#333333",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-8918014513865688833",
+      "padding": "32,0,32,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,0,8,0"
+      },
+      "cardsContainer": {
+        "padding": "0,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-5155149432663030127",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 0.5882352941,
+        "margin": "0,0,8,0",
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      },
+      "textContainer": {
+        "padding": "4,0,0,0",
+        "margin": "4,0,0,0",
+        "elevation": 1
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "8359608758880464868",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-381721278589114633",
+      "type": "text",
+      "font": "body-large",
+      "fontColor": "#666666",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "6859246922947201096",
+      "padding": "64,0,32,0",
+      "type": "widget",
+      "background": {
+        "color": "#F2F5F9"
+      },
+      "headerContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,0,8,0"
+      },
+      "cardsContainer": {
+        "padding": "0,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-6446675824081209606",
+      "type": "text",
+      "font": "temp-header-xlarge",
+      "fontColor": "#333333",
+      "lineMargin": "0,5,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-5631314225860854088",
+      "padding": "16,0,16,0",
+      "type": "widget",
+      "background": {
+        "color": "#2B3148"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "3060859398946935339",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 12.0,
+        "shimmer": false
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "widget-scroll-cta-01",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#DC3558",
+      "lineMargin": "0,0,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-title-01",
+      "type": "text",
+      "font": "title",
+      "fontColor": "#222222",
+      "lineMargin": "8,4,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-subtitle-01",
+      "type": "text",
+      "font": "tiny-medium",
+      "fontColor": "#DC354B",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-title-01",
+      "type": "text",
+      "font": "subtitle-regular",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-subtitle-01",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#666666",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-1591248389725590333",
+      "type": "text",
+      "font": "overline",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2759634946264020090",
+      "padding": "2,4,2,4",
+      "type": "tag",
+      "background": {
+        "color": "#DC354B"
+      },
+      "border": {
+        "cornerRadius": "2,2,2,2",
+        "opacity": 1.0,
+        "width": 0.0
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "vcp-header-title-01",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#222222",
+      "lineMargin": "4,4,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "tooltip-style",
+      "padding": "12,12,12,12",
+      "margin": "0,16,0,16",
+      "type": "tooltip",
+      "background": {
+        "color": "#3E6EEA",
+        "opacity": 1.0
+      },
+      "font": "extra-tiny-medium",
+      "fontColor": "#ffffff",
+      "border": {
+        "cornerRadius": "24,24,24,24"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "4613623615333230671",
+      "padding": "32,0,64,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,0,8,0"
+      },
+      "cardsContainer": {
+        "padding": "0,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "5159940007754894226",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 1.0,
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "5663542403916329510",
+      "type": "text",
+      "font": "temp-header-xlarge",
+      "fontColor": "#333333",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-8918014513865688833",
+      "padding": "32,0,32,0",
+      "type": "widget",
+      "headerContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,0,8,0"
+      },
+      "cardsContainer": {
+        "padding": "0,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-5155149432663030127",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 0.5882352941,
+        "margin": "0,0,8,0",
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      },
+      "textContainer": {
+        "padding": "4,0,0,0",
+        "margin": "4,0,0,0",
+        "elevation": 1
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "8359608758880464868",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-381721278589114633",
+      "type": "text",
+      "font": "body-large",
+      "fontColor": "#666666",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2473546218460240831",
+      "padding": "16,0,16,0",
+      "type": "widget",
+      "background": {
+        "color": "#2B3148"
+      },
+      "headerContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,0,8,0"
+      },
+      "cardsContainer": {
+        "padding": "0,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-1933164280007154362",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 0.6667,
+        "margin": "0,0,8,0",
+        "shimmer": false,
+        "border": {
+          "cornerRadius": "8,8,8,8",
+          "opacity": 1.0,
+          "width": 0.0
+        }
+      },
+      "textContainer": {
+        "padding": "4,0,0,0",
+        "margin": "4,0,0,0",
+        "elevation": 1
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-2631502671078853998",
+      "type": "text",
+      "font": "title",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-7539328388024005469",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "4139901534416017552",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#ffffff",
+      "lineMargin": "0,0,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "7354667013117254526",
+      "type": "text",
+      "font": "body-large",
+      "fontColor": "#ffffff",
+      "lineMargin": "0,0,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "6859246922947201096",
+      "padding": "64,0,32,0",
+      "type": "widget",
+      "background": {
+        "color": "#F2F5F9"
+      },
+      "headerContainer": {
+        "padding": "0,0,0,0",
+        "margin": "0,0,8,0"
+      },
+      "cardsContainer": {
+        "padding": "0,0,0,0"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "-6446675824081209606",
+      "type": "text",
+      "font": "temp-header-xlarge",
+      "fontColor": "#333333",
+      "lineMargin": "0,5,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-5631314225860854088",
+      "padding": "16,0,16,0",
+      "type": "widget",
+      "background": {
+        "color": "#2B3148"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom",
+      "indicatorProperties": {
+        "colors": {
+          "active": "",
+          "inactive": ""
+        }
+      }
+    },
+    {
+      "id": "3060859398946935339",
+      "type": "card",
+      "imageContainer": {
+        "aspectRatio": 12.0,
+        "shimmer": false
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "widget-scroll-cta-01",
+      "type": "text",
+      "font": "body-regular",
+      "fontColor": "#DC3558",
+      "lineMargin": "0,0,0,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-title-01",
+      "type": "text",
+      "font": "title",
+      "fontColor": "#222222",
+      "lineMargin": "8,4,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "header-subtitle-01",
+      "type": "text",
+      "font": "tiny-medium",
+      "fontColor": "#DC354B",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-title-01",
+      "type": "text",
+      "font": "subtitle-regular",
+      "fontColor": "#222222",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "listing-header-subtitle-01",
+      "type": "text",
+      "font": "body-small",
+      "fontColor": "#666666",
+      "lineMargin": "0,0,0,16",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "-1591248389725590333",
+      "type": "text",
+      "font": "overline",
+      "fontColor": "#ffffff",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "2759634946264020090",
+      "padding": "2,4,2,4",
+      "type": "tag",
+      "background": {
+        "color": "#DC354B"
+      },
+      "border": {
+        "cornerRadius": "2,2,2,2",
+        "opacity": 1.0,
+        "width": 0.0
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "vcp-header-title-01",
+      "type": "text",
+      "font": "subtitle-large",
+      "fontColor": "#222222",
+      "lineMargin": "4,4,4,0",
+      "shimmer": false,
+      "horizontalAlignment": "left",
+      "imageVerticalAlignment": "bottom"
+    },
+    {
+      "id": "tooltip-style",
+      "padding": "12,12,12,12",
+      "margin": "0,16,0,16",
+      "type": "tooltip",
+      "background": {
+        "color": "#3E6EEA",
+        "opacity": 1.0
+      },
+      "font": "extra-tiny-medium",
+      "fontColor": "#ffffff",
+      "border": {
+        "cornerRadius": "24,24,24,24"
+      },
+      "shimmer": false,
+      "imageVerticalAlignment": "bottom"
+    },
+    {
       "id": "5340090739233308580",
       "padding": "16,0,16,0",
       "margin": "0,0,0,0",

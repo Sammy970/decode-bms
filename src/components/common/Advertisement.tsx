@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { cn } from "@/lib/utils";
 
 interface AdvertisementProps {
   ads: Array<{
@@ -90,7 +91,12 @@ const Advertisement: React.FC<AdvertisementProps> = ({ ads }) => {
               <img
                 src={url}
                 alt={`Advertisement ${index + 1}`}
-                className="w-full h-auto"
+                className={cn(
+                  "w-full h-auto",
+                  String(ads[index].adunitcode).trim().includes("_mweb")
+                    ? "rounded-[0px]"
+                    : "rounded-[10px]"
+                )}
               />
             </CarouselItem>
           ))}
