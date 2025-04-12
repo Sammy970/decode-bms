@@ -1,7 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { motion, useAnimation, useMotionValue } from "framer-motion";
+import React from "react";
 import Card from "./Card";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { styles } from "@/utils/styles.json";
 import {
   Carousel,
@@ -1115,26 +1113,6 @@ const getHeaderContainerStyle = (data: any): React.CSSProperties => {
           .join(" ")
       : undefined,
     width: "100%",
-  };
-};
-
-const getCardsContainerStyle = (data: any): React.CSSProperties => {
-  const style = styles.find((s) => s.id === data.styleId);
-  return {
-    padding: style?.cardsContainer?.padding
-      ? String(style?.cardsContainer?.padding)
-          .split(",")
-          .map((val) => `${val}px`)
-          .join(" ")
-      : undefined,
-    margin: style?.cardsContainer?.margin
-      ? String(style?.cardsContainer?.margin)
-          .split(",")
-          .map((val) => `${val}px`)
-          .join(" ")
-      : undefined,
-    width: "100%",
-    position: "relative",
   };
 };
 
