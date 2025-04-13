@@ -28,6 +28,14 @@ import {
 function App() {
   const [mobileMode, setMobileMode] = useState(window.innerWidth < 480);
 
+  // Redirect the user automatically to /home if they are not on the home page
+  useEffect(() => {
+    const currentUrl = window.location.href;
+    if (!currentUrl.includes("/home")) {
+      window.location.href = "/home";
+    }
+  }, []);
+
   useEffect(() => {
     const handleResize = () => {
       setMobileMode(window.innerWidth < 480);
