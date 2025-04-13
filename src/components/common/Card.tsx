@@ -225,7 +225,7 @@ const Card = ({
               </div>
             )}
           </div>
-          {metaImages && metaImages?.length > 0 && (
+          {metaImages && (
             <div className="flex flex-row gap-2 mt-2 w-full">
               {metaImages.map((metaImage, index) => {
                 const metaImageStyle = styles.find(
@@ -245,7 +245,7 @@ const Card = ({
               })}
             </div>
           )}
-          {text && text?.length > 0 && (
+          {text && (
             <div style={textContainerStyle}>
               {text.map((textItem, index) => {
                 const textStyle = styles.find((s) => s.id === textItem.styleId);

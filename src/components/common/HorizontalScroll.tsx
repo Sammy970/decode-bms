@@ -275,7 +275,7 @@ const HorizontalScroll = ({
                       maxWidth: `${
                         String(data.id).includes("_WEB")
                           ? `${100 / itemsPerRow}vw`
-                          : "300px"
+                          : "400px"
                       }`,
                       maxHeight: "100%",
                     }}

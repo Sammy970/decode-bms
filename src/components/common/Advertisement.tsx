@@ -39,22 +39,27 @@ interface AdvertisementProps {
   };
 }
 
-const getAdsContainerStyle = (styleId: string): React.CSSProperties => {
+const getAdsContainerStyle = (
+  styleId: string,
+  ads: AdvertisementProps["ads"]
+): React.CSSProperties => {
   const style = styles.find((style) => style.id === styleId);
 
   if (!style) {
     return {};
   }
 
-  const containerStyle = {
-    // padding: String(style.padding)
-    //   .split(",")
-    //   .map((val) => `${val}px`)
-    //   .join(" "),
-    padding: "10px",
-  };
+  const web = ads.id.includes("_WEB");
 
-  console.log(containerStyle, style);
+  const containerStyle = {
+    padding: web
+      ? "10px 0px 20px 0px"
+      : String(style.padding)
+          .trim()
+          .split(",")
+          .map((p) => `${p}px`)
+          .join(" "),
+  };
 
   return containerStyle;
 };
@@ -86,14 +91,14 @@ const Advertisement: React.FC<AdvertisementProps> = ({ ads }) => {
   // No need for carousel if only one image
   if (imageUrls.length <= 1) {
     return imageUrls.length === 1 ? (
-      <div className="w-full" style={getAdsContainerStyle(ads.styleId)}>
+      <div className="w-full" style={getAdsContainerStyle(ads.styleId, ads)}>
         <img src={imageUrls[0]} alt="Advertisement" className="w-full h-auto" />
       </div>
     ) : null;
   }
 
   return (
-    <div style={getAdsContainerStyle(ads.styleId)}>
+    <div style={getAdsContainerStyle(ads.styleId, ads)}>
       <Carousel
         setApi={setApi}
         opts={{

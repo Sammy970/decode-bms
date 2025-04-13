@@ -47,7 +47,7 @@ const HeaderSubWeb = () => {
   };
   return (
     <div className="w-full h-[40px] bg-[#f5f5f5] flex items-center justify-between px-[90px] border-b border-[#e5e5e5]">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 whitespace-nowrap ">
         {List.left.map((item, index) => (
           <a
             key={index}
@@ -58,7 +58,7 @@ const HeaderSubWeb = () => {
           </a>
         ))}
       </div>
-      <div className="flex items-center">
+      <div className="flex items-center whitespace-nowrap flex-wrap">
         {List.right.map((item, index) => (
           <a
             key={index}
