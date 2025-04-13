@@ -40,7 +40,7 @@ const Header = () => {
         <h1 className="text-2xl text-[#404040] font-semibold">
           It All Starts Here!
         </h1>
-        <h2 className="text-[#dc354b] text-[12px]">{"Bengaluru >"}</h2>
+        <h2 className="text-[#dc354b] text-[12px]">{"Bengaluru ›"}</h2>
       </div>
       <div className="rounded-lg border-[1px] border-[#e5e5e5] px-2 py-1.5 mr-4">
         <h1 className="whitespace-nowrap tracking-tighter text-[12px]">

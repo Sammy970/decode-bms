@@ -59,7 +59,7 @@ function App() {
           <div className="w-full h-full flex flex-col items-center justify-center">
             <Advertisement ads={ADS_TECH_BANNER_MWEB} />
 
-            <div className="w-full">
+            <div className="w-full px-[16px]">
               <HorizontalScroll data={TOP_MOVIES_MOBILE} />
             </div>
 
