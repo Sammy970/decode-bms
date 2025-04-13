@@ -19,9 +19,8 @@ const Header = () => {
   return (
     <div
       style={{
-        position: isScrolled ? "fixed" : "static",
-        zIndex: 1000,
         top: 0,
+        zIndex: 1000,
         backgroundColor: "white",
         width: "100%",
         height: "60px",
@@ -35,17 +34,20 @@ const Header = () => {
         borderBottomWidth: "1px",
         borderBottomColor: "#d0d5e5",
       }}
+      className="sticky"
     >
       <div className="flex flex-col items-start justify-center w-full">
         <h1 className="text-2xl text-[#404040] font-semibold">
           It All Starts Here!
         </h1>
-        <h2 className="text-[#dc354b] text-[13px]">{"Bengaluru >"}</h2>
+        <h2 className="text-[#dc354b] text-[12px]">{"Bengaluru >"}</h2>
       </div>
-      <div className="rounded-md border-[1px] border-[#e5e5e5] px-2 py-1 mr-2">
-        <h1 className="whitespace-nowrap text-sm">Use App</h1>
+      <div className="rounded-lg border-[1px] border-[#e5e5e5] px-2 py-1.5 mr-4">
+        <h1 className="whitespace-nowrap tracking-tighter text-[12px]">
+          Use App
+        </h1>
       </div>
-      <div style={{ width: "24px", height: "24px", marginTop: 5 }}>
+      <div style={{ width: "32px", height: "32px", marginTop: 10 }}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
             fill="#666666"

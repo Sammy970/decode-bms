@@ -84,21 +84,41 @@ const getHorizontalScrollStyle = (
   styles: any[]
 ): React.CSSProperties => {
   const style = styles.find((s) => s.id === data.styleId);
-  return {
-    margin: style?.margin
-      ? String(style.margin)
-          .split(",")
-          .map((val) => `${val}px`)
-          .join(" ")
-      : undefined,
+
+  const styleContainer = {
     backgroundColor: style?.background?.color,
-    padding: style?.padding
-      ? String(style.padding)
-          .split(",")
-          .map((val) => `${val}px`)
-          .join(" ")
-      : undefined,
+    // margin:
+    //   style?.headerContainer?.margin === "0,0,0,0"
+    //     ? String(style.margin)
+    //         .split(",")
+    //         .map((val) => `${val}px`)
+    //         .join(" ")
+    //     : String(style.headerContainer.margin)
+    //         .split(",")
+    //         .map((val) => `${val}px`)
+    //         .join(" "),
+    // padding:
+    //   style?.headerContainer?.padding === "0,0,0,0"
+    //     ? String(style.padding)
+    //         .split(",")
+    //         .map((val) => `${val}px`)
+    //         .join(" ")
+    //     : String(style.headerContainer.padding)
+    //         .split(",")
+    //         .map((val) => `${val}px`)
+    //         .join(" "),
+    margin: String(style.margin)
+      .split(",")
+      .map((val: string) => `${val}px`)
+      .join(" "),
+    padding: String(style.padding)
+      .split(",")
+      .map((val: string) => `${val}px`)
+      .join(" "),
+    width: "100%",
   };
+
+  return styleContainer;
 };
 
 const HorizontalScroll = ({
@@ -181,7 +201,7 @@ const HorizontalScroll = ({
   };
 
   return (
-    <div style={getHorizontalScrollStyle(data, styles)} className="w-full">
+    <div style={getHorizontalScrollStyle(data, styles)}>
       {/* Header Section */}
       {data.title || data.subtitle ? (
         <div className="flex justify-between items-center">
@@ -211,10 +231,10 @@ const HorizontalScroll = ({
         {scrollIndicatorEnabled && canScrollLeft && (
           <button
             onClick={() => handleScroll("left")}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full p-1 shadow-md"
-            style={{ left: "10px" }}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[#999] rounded-full p-1 shadow-md"
+            style={{ left: "-20px" }}
           >
-            <ChevronLeft size={24} />
+            <ChevronLeft size={30} color="white" />
           </button>
         )}
 
@@ -284,10 +304,10 @@ const HorizontalScroll = ({
         {scrollIndicatorEnabled && canScrollRight && (
           <button
             onClick={() => handleScroll("right")}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full p-1 shadow-md"
-            style={{ right: "10px" }}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[#999] rounded-full p-1 shadow-md"
+            style={{ right: "-20px" }}
           >
-            <ChevronRight size={24} />
+            <ChevronRight size={30} color="white" />
           </button>
         )}
       </div>

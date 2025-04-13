@@ -5,11 +5,14 @@ import CarouselComp from "./components/common/CarouselComp";
 import Flexbox from "./components/common/Flexbox";
 import HorizontalScroll from "./components/common/HorizontalScroll";
 import Header from "./components/Header";
+import BottomNav from "./components/common/BottomNav";
+
 import {
-  ADS_WEB,
-  AdsV1,
-  AdsV2,
-  AdsV3,
+  AD_HOME_HERO_WIDGET_MWEB,
+  ADS_HOME_CAROUSEL_MWEB,
+  ADS_TECH_BANNER_MWEB,
+  ADS_TECH_BANNER_WEB,
+  BOTTOM_NAVIGATION_TABS,
   DISCOVER_ONLINE_COLLECTIONS_MOBILE,
   DISCOVER_ONLINE_COLLECTIONS_WEB,
   ICD_TOP_NAV_MENU_MOBILE_VARIANT,
@@ -43,13 +46,16 @@ function App() {
         <>
           <Header />
           <HorizontalScroll data={ICD_TOP_NAV_MENU_MOBILE_VARIANT} />
-          <Advertisement ads={AdsV1} />
+          <Advertisement ads={ADS_HOME_CAROUSEL_MWEB} />
 
-          <div className="w-full h-full flex flex-col items-center justify-center px-3">
-            <Advertisement ads={AdsV2} />
-            <HorizontalScroll data={TOP_MOVIES_MOBILE} />
+          <div className="w-full h-full flex flex-col items-center justify-center">
+            <Advertisement ads={ADS_TECH_BANNER_MWEB} />
 
-            <Advertisement ads={AdsV3} />
+            <div className="w-full">
+              <HorizontalScroll data={TOP_MOVIES_MOBILE} />
+            </div>
+
+            <Advertisement ads={AD_HOME_HERO_WIDGET_MWEB} />
 
             {LayoutScreenWidgets.map((widget) => {
               if (widget.type === "flexbox") {
@@ -66,25 +72,31 @@ function App() {
               }
               return null;
             })}
-            <HorizontalScroll data={TOP_KIDS} />
-            <HorizontalScroll data={DISCOVER_ONLINE_COLLECTIONS_MOBILE} />
-            <HorizontalScroll
-              data={ULTIMATE_EVENTS_LIST_COLLECTIONS_IOS_MWEB_VARIANT}
-            />
+            <div className="w-full px-[16px]">
+              <HorizontalScroll data={TOP_KIDS} />
+              <HorizontalScroll data={DISCOVER_ONLINE_COLLECTIONS_MOBILE} />
+              <HorizontalScroll
+                data={ULTIMATE_EVENTS_LIST_COLLECTIONS_IOS_MWEB_VARIANT}
+              />
+            </div>
+
             <CarouselComp data={TVOD_SHOWCASE} />
           </div>
+          <BottomNav navTabs={BOTTOM_NAVIGATION_TABS} />
         </>
       ) : (
-        <div className="w-full h-full flex flex-col items-center justify-center p-10">
-          <Advertisement ads={ADS_WEB} />
-          <HorizontalScroll data={TOP_MOVIES_WEB} />
-          <Flexbox
-            cards={STREAM_LEAD_IN_WEB.cards}
-            itemsPerRow={STREAM_LEAD_IN_WEB.itemsPerRow}
-            styleId={STREAM_LEAD_IN_WEB.styleId}
-          />
-          <HorizontalScroll data={DISCOVER_ONLINE_COLLECTIONS_WEB} />
-        </div>
+        <>
+          <Advertisement ads={ADS_TECH_BANNER_WEB} />
+          <div className="w-full h-full flex flex-col items-center justify-center pt-5 px-[90px]">
+            <HorizontalScroll data={TOP_MOVIES_WEB} />
+            <Flexbox
+              cards={STREAM_LEAD_IN_WEB.cards}
+              itemsPerRow={STREAM_LEAD_IN_WEB.itemsPerRow}
+              styleId={STREAM_LEAD_IN_WEB.styleId}
+            />
+            <HorizontalScroll data={DISCOVER_ONLINE_COLLECTIONS_WEB} />
+          </div>
+        </>
       )}
     </>
   );

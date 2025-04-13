@@ -2828,124 +2828,148 @@ export const TVOD_SHOWCASE = {
   sliderDuration: 3000,
 };
 
-export const AdsV1 = [
-  {
-    adtype: "DISPLAY",
-    reqid: "7577a3b7-755c-42db-95f2-7b92c85627a5",
-    adunitcode: "homepage_carousel3_mweb",
-    size: "SIZE_FLUID",
-    assets: {
-      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744284713627_eastereggstravaganzaapp.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/events/easter-eggs-travaganza/ET00440688") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=7577a3b7-755c-42db-95f2-7b92c85627a5");\n\t\t  \tif(\'homepage_carousel3_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel3_mweb");\n            }\n          window.open("https://in.bookmyshow.com/events/easter-eggs-travaganza/ET00440688");\n        }\n      }\n    </script>\n  </body>\n</html>',
-      duration: 3000,
-      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=7577a3b7-755c-42db-95f2-7b92c85627a5",
-      position: 3,
+export const ADS_HOME_CAROUSEL_MWEB = {
+  id: "AD_HOME_CAROUSEL_MWEB",
+  adtechId: "AD_HOME_CAROUSEL",
+  type: "advertisement",
+  isSticky: false,
+  styleId: "-4248498540950589586",
+  matchMaxCardHeight: false,
+  cards: [
+    {
+      adtype: "DISPLAY",
+      reqid: "7577a3b7-755c-42db-95f2-7b92c85627a5",
+      adunitcode: "homepage_carousel3_mweb",
+      size: "SIZE_FLUID",
+      assets: {
+        adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744284713627_eastereggstravaganzaapp.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/events/easter-eggs-travaganza/ET00440688") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=7577a3b7-755c-42db-95f2-7b92c85627a5");\n\t\t  \tif(\'homepage_carousel3_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel3_mweb");\n            }\n          window.open("https://in.bookmyshow.com/events/easter-eggs-travaganza/ET00440688");\n        }\n      }\n    </script>\n  </body>\n</html>',
+        duration: 3000,
+        iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=7577a3b7-755c-42db-95f2-7b92c85627a5",
+        position: 3,
+      },
+      ext: {
+        thirdpartyclicktracker: "",
+        thirdpartyimpressiontracker: "",
+      },
     },
-    ext: {
-      thirdpartyclicktracker: "",
-      thirdpartyimpressiontracker: "",
+    {
+      adtype: "DISPLAY",
+      reqid: "76450f29-43a0-4732-8771-c0a7bd059a40",
+      adunitcode: "homepage_carousel4_mweb",
+      size: "SIZE_FLUID",
+      assets: {
+        adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744182522797_revisedisl1080x540.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/specials/isl-2025-final-mohun-bagan-vs-bengaluru-fc/ET00441032") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=76450f29-43a0-4732-8771-c0a7bd059a40");\n\t\t  \tif(\'homepage_carousel4_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel4_mweb");\n            }\n          window.open("https://in.bookmyshow.com/specials/isl-2025-final-mohun-bagan-vs-bengaluru-fc/ET00441032");\n        }\n      }\n    </script>\n  </body>\n</html>',
+        duration: 3000,
+        iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=76450f29-43a0-4732-8771-c0a7bd059a40",
+        position: 4,
+      },
+      ext: {
+        thirdpartyclicktracker: "",
+        thirdpartyimpressiontracker: "",
+      },
     },
-  },
-  {
-    adtype: "DISPLAY",
-    reqid: "76450f29-43a0-4732-8771-c0a7bd059a40",
-    adunitcode: "homepage_carousel4_mweb",
-    size: "SIZE_FLUID",
-    assets: {
-      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744182522797_revisedisl1080x540.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/specials/isl-2025-final-mohun-bagan-vs-bengaluru-fc/ET00441032") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=76450f29-43a0-4732-8771-c0a7bd059a40");\n\t\t  \tif(\'homepage_carousel4_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel4_mweb");\n            }\n          window.open("https://in.bookmyshow.com/specials/isl-2025-final-mohun-bagan-vs-bengaluru-fc/ET00441032");\n        }\n      }\n    </script>\n  </body>\n</html>',
-      duration: 3000,
-      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=76450f29-43a0-4732-8771-c0a7bd059a40",
-      position: 4,
+    {
+      adtype: "DISPLAY",
+      reqid: "1dc5f610-3ac9-48ed-ba05-96dbf5f585be",
+      adunitcode: "homepage_carousel2_mweb",
+      size: "SIZE_FLUID",
+      assets: {
+        adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1742619378575_my11app.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://my11circleapp.onelink.me/5r0c?af_xp=custom&pid=m1c_mediabuy_blinkdigital_bookmyshow&af_click_lookback=7d&af_dp=my11circle%3A%2F%2F&advertising_id=%7Bgaid%7D&is_retargeting=true&af_reengagement_window=7d&af_inactivity_window=3d&c=open_brand_ps_android_panindia_newCh&af_pmod_priority=equal&af_pmod_lookback_window=7d&af_channel=m1c_mediabuy_blinkdigital_bookmyshow&utm_source=m1c_mediabuy_blinkdigital_bookmyshow&af_adset=get4999bonuscash_IPL&utm_medium=get4999bonuscash_IPL&utm_campaign=open_brand_ps_android_panindia_newCh&utm_content=scratchcard_na_Eng&af_ad=scratchcard_na_Eng") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=1dc5f610-3ac9-48ed-ba05-96dbf5f585be");\n\t\t  \tif(\'homepage_carousel2_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel2_mweb");\n            }\n          window.open("https://my11circleapp.onelink.me/5r0c?af_xp=custom&pid=m1c_mediabuy_blinkdigital_bookmyshow&af_click_lookback=7d&af_dp=my11circle%3A%2F%2F&advertising_id=%7Bgaid%7D&is_retargeting=true&af_reengagement_window=7d&af_inactivity_window=3d&c=open_brand_ps_android_panindia_newCh&af_pmod_priority=equal&af_pmod_lookback_window=7d&af_channel=m1c_mediabuy_blinkdigital_bookmyshow&utm_source=m1c_mediabuy_blinkdigital_bookmyshow&af_adset=get4999bonuscash_IPL&utm_medium=get4999bonuscash_IPL&utm_campaign=open_brand_ps_android_panindia_newCh&utm_content=scratchcard_na_Eng&af_ad=scratchcard_na_Eng");\n        }\n      }\n    </script>\n  </body>\n</html>',
+        duration: 3000,
+        iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=1dc5f610-3ac9-48ed-ba05-96dbf5f585be",
+        position: 2,
+      },
+      ext: {
+        thirdpartyclicktracker: "",
+        thirdpartyimpressiontracker: "",
+      },
     },
-    ext: {
-      thirdpartyclicktracker: "",
-      thirdpartyimpressiontracker: "",
+    {
+      adtype: "DISPLAY",
+      reqid: "cd2efec5-3df9-45bc-897b-b95a0578befa",
+      adunitcode: "homepage_carousel5_mweb",
+      size: "SIZE_FLUID",
+      assets: {
+        adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743491492474_summer2024appbanner.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/explore/activities?categories=amusement-parks") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=cd2efec5-3df9-45bc-897b-b95a0578befa");\n\t\t  \tif(\'homepage_carousel5_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel5_mweb");\n            }\n          window.open("https://in.bookmyshow.com/explore/activities?categories=amusement-parks");\n        }\n      }\n    </script>\n  </body>\n</html>',
+        duration: 3000,
+        iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=cd2efec5-3df9-45bc-897b-b95a0578befa",
+        position: 5,
+      },
+      ext: {
+        thirdpartyclicktracker: "",
+        thirdpartyimpressiontracker: "",
+      },
     },
-  },
-  {
-    adtype: "DISPLAY",
-    reqid: "1dc5f610-3ac9-48ed-ba05-96dbf5f585be",
-    adunitcode: "homepage_carousel2_mweb",
-    size: "SIZE_FLUID",
-    assets: {
-      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1742619378575_my11app.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://my11circleapp.onelink.me/5r0c?af_xp=custom&pid=m1c_mediabuy_blinkdigital_bookmyshow&af_click_lookback=7d&af_dp=my11circle%3A%2F%2F&advertising_id=%7Bgaid%7D&is_retargeting=true&af_reengagement_window=7d&af_inactivity_window=3d&c=open_brand_ps_android_panindia_newCh&af_pmod_priority=equal&af_pmod_lookback_window=7d&af_channel=m1c_mediabuy_blinkdigital_bookmyshow&utm_source=m1c_mediabuy_blinkdigital_bookmyshow&af_adset=get4999bonuscash_IPL&utm_medium=get4999bonuscash_IPL&utm_campaign=open_brand_ps_android_panindia_newCh&utm_content=scratchcard_na_Eng&af_ad=scratchcard_na_Eng") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=1dc5f610-3ac9-48ed-ba05-96dbf5f585be");\n\t\t  \tif(\'homepage_carousel2_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel2_mweb");\n            }\n          window.open("https://my11circleapp.onelink.me/5r0c?af_xp=custom&pid=m1c_mediabuy_blinkdigital_bookmyshow&af_click_lookback=7d&af_dp=my11circle%3A%2F%2F&advertising_id=%7Bgaid%7D&is_retargeting=true&af_reengagement_window=7d&af_inactivity_window=3d&c=open_brand_ps_android_panindia_newCh&af_pmod_priority=equal&af_pmod_lookback_window=7d&af_channel=m1c_mediabuy_blinkdigital_bookmyshow&utm_source=m1c_mediabuy_blinkdigital_bookmyshow&af_adset=get4999bonuscash_IPL&utm_medium=get4999bonuscash_IPL&utm_campaign=open_brand_ps_android_panindia_newCh&utm_content=scratchcard_na_Eng&af_ad=scratchcard_na_Eng");\n        }\n      }\n    </script>\n  </body>\n</html>',
-      duration: 3000,
-      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=1dc5f610-3ac9-48ed-ba05-96dbf5f585be",
-      position: 2,
+    {
+      adtype: "DISPLAY",
+      reqid: "0092a77a-83d1-4223-837f-fecf28a19930",
+      adunitcode: "homepage_carousel1_mweb",
+      size: "SIZE_FLUID",
+      assets: {
+        adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743774952460_horizontalbannersweb1080.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/events/hsbc-living-legends-hari-se-hari-tak/ET00440255") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=0092a77a-83d1-4223-837f-fecf28a19930");\n\t\t  \tif(\'homepage_carousel1_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel1_mweb");\n            }\n          window.open("https://in.bookmyshow.com/events/hsbc-living-legends-hari-se-hari-tak/ET00440255");\n        }\n      }\n    </script>\n  </body>\n</html>',
+        duration: 3000,
+        iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=0092a77a-83d1-4223-837f-fecf28a19930",
+        position: 1,
+      },
+      ext: {
+        thirdpartyclicktracker: "",
+        thirdpartyimpressiontracker: "",
+      },
     },
-    ext: {
-      thirdpartyclicktracker: "",
-      thirdpartyimpressiontracker: "",
-    },
-  },
-  {
-    adtype: "DISPLAY",
-    reqid: "cd2efec5-3df9-45bc-897b-b95a0578befa",
-    adunitcode: "homepage_carousel5_mweb",
-    size: "SIZE_FLUID",
-    assets: {
-      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743491492474_summer2024appbanner.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/explore/activities?categories=amusement-parks") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=cd2efec5-3df9-45bc-897b-b95a0578befa");\n\t\t  \tif(\'homepage_carousel5_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel5_mweb");\n            }\n          window.open("https://in.bookmyshow.com/explore/activities?categories=amusement-parks");\n        }\n      }\n    </script>\n  </body>\n</html>',
-      duration: 3000,
-      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=cd2efec5-3df9-45bc-897b-b95a0578befa",
-      position: 5,
-    },
-    ext: {
-      thirdpartyclicktracker: "",
-      thirdpartyimpressiontracker: "",
-    },
-  },
-  {
-    adtype: "DISPLAY",
-    reqid: "0092a77a-83d1-4223-837f-fecf28a19930",
-    adunitcode: "homepage_carousel1_mweb",
-    size: "SIZE_FLUID",
-    assets: {
-      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743774952460_horizontalbannersweb1080.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/events/hsbc-living-legends-hari-se-hari-tak/ET00440255") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=0092a77a-83d1-4223-837f-fecf28a19930");\n\t\t  \tif(\'homepage_carousel1_mweb\'){\n              window.parent.BMSSDK.fireImpression("homepage_carousel1_mweb");\n            }\n          window.open("https://in.bookmyshow.com/events/hsbc-living-legends-hari-se-hari-tak/ET00440255");\n        }\n      }\n    </script>\n  </body>\n</html>',
-      duration: 3000,
-      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=0092a77a-83d1-4223-837f-fecf28a19930",
-      position: 1,
-    },
-    ext: {
-      thirdpartyclicktracker: "",
-      thirdpartyimpressiontracker: "",
-    },
-  },
-];
+  ],
+};
 
-export const AdsV2 = [
-  {
-    adtype: "DISPLAY",
-    reqid: "ad0c7d0f-1091-42f3-be46-486dfe1572c5",
-    adunitcode: "prod_hp_banner_mweb",
-    size: "SIZE_FLUID",
-    assets: {
-      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744290758851_chhorri2slug.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=ad0c7d0f-1091-42f3-be46-486dfe1572c5");\n\t\t  \tif(\'prod_hp_banner_mweb\'){\n              window.parent.BMSSDK.fireImpression("prod_hp_banner_mweb");\n            }\n          window.open("");\n        }\n      }\n    </script>\n  </body>\n</html>',
-      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=ad0c7d0f-1091-42f3-be46-486dfe1572c5",
-      position: 1,
+export const ADS_TECH_BANNER_MWEB = {
+  id: "AD_TECH_BANNER_MWEB",
+  adtechId: "AD_HOME_BANNER_CARD",
+  type: "advertisement",
+  isSticky: false,
+  styleId: "-1044580892530786092",
+  matchMaxCardHeight: false,
+  cards: [
+    {
+      adtype: "DISPLAY",
+      reqid: "ad0c7d0f-1091-42f3-be46-486dfe1572c5",
+      adunitcode: "prod_hp_banner_mweb",
+      size: "SIZE_FLUID",
+      assets: {
+        adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744290758851_chhorri2slug.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=ad0c7d0f-1091-42f3-be46-486dfe1572c5");\n\t\t  \tif(\'prod_hp_banner_mweb\'){\n              window.parent.BMSSDK.fireImpression("prod_hp_banner_mweb");\n            }\n          window.open("");\n        }\n      }\n    </script>\n  </body>\n</html>',
+        iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=ad0c7d0f-1091-42f3-be46-486dfe1572c5",
+        position: 1,
+      },
+      ext: {
+        thirdpartyclicktracker: "",
+        thirdpartyimpressiontracker: "",
+      },
     },
-    ext: {
-      thirdpartyclicktracker: "",
-      thirdpartyimpressiontracker: "",
-    },
-  },
-];
+  ],
+};
 
-export const AdsV3 = [
-  {
-    adtype: "DISPLAY",
-    reqid: "6d54d895-d825-4aab-9cdd-b4b0c988cd38",
-    adunitcode: "herowidget_mweb",
-    size: "SIZE_FLUID",
-    assets: {
-      adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1726040029956_playcardapplatest.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/play-credit-card?ad=herowidget") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=6d54d895-d825-4aab-9cdd-b4b0c988cd38");\n\t\t  \tif(\'herowidget_mweb\'){\n              window.parent.BMSSDK.fireImpression("herowidget_mweb");\n            }\n          window.open("https://in.bookmyshow.com/play-credit-card?ad=herowidget");\n        }\n      }\n    </script>\n  </body>\n</html>',
-      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=6d54d895-d825-4aab-9cdd-b4b0c988cd38",
-      position: 1,
+export const AD_HOME_HERO_WIDGET_MWEB = {
+  id: "AD_HOME_HERO_WIDGET_MWEB",
+  adtechId: "AD_HOME_HERO_WIDGET",
+  type: "advertisement",
+  isSticky: false,
+  styleId: "1731161595816223629",
+  matchMaxCardHeight: false,
+  cards: [
+    {
+      adtype: "DISPLAY",
+      reqid: "6d54d895-d825-4aab-9cdd-b4b0c988cd38",
+      adunitcode: "herowidget_mweb",
+      size: "SIZE_FLUID",
+      assets: {
+        adm: '<html>\n  <head>\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n      }\n    </style>\n  </head>\n  <body>\n    <img\n      id="js-ads-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1726040029956_playcardapplatest.jpg"\n      alt="promotion-banner"\n    />\n    <script>\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/play-credit-card?ad=herowidget") {\n          fetch("https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=6d54d895-d825-4aab-9cdd-b4b0c988cd38");\n\t\t  \tif(\'herowidget_mweb\'){\n              window.parent.BMSSDK.fireImpression("herowidget_mweb");\n            }\n          window.open("https://in.bookmyshow.com/play-credit-card?ad=herowidget");\n        }\n      }\n    </script>\n  </body>\n</html>',
+        iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=6d54d895-d825-4aab-9cdd-b4b0c988cd38",
+        position: 1,
+      },
+      ext: {
+        thirdpartyclicktracker: "",
+        thirdpartyimpressiontracker: "",
+      },
     },
-    ext: {
-      thirdpartyclicktracker: "",
-      thirdpartyimpressiontracker: "",
-    },
-  },
-];
+  ],
+};
 
 export const TOP_MOVIES_WEB = {
   id: "TOP_MOVIES_WEB",
@@ -4255,69 +4279,305 @@ export const DISCOVER_ONLINE_COLLECTIONS_WEB = {
   childWidgets: [],
 };
 
-export const ADS_WEB = [
-  {
-    adtype: "DISPLAY",
-    reqid: "b65f8d24-2406-4fb9-aae1-a5d35464b76c",
-    adunitcode: "prod_desktop_hp_carousel_5",
-    size: "SIZE_FLUID",
-    assets: {
-      adm: '\u003chtml\u003e\n  \u003chead\u003e\n    \u003cstyle\u003e\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n        border-radius: 10px;\n        cursor: pointer;\n      }\n    \u003c/style\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003cimg\n      id="js-promotion-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744000092318_venompreviewweb.jpg"\n      alt="promotion-banner"\n    /\u003e\n    \u003cscript\u003e\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/movies/venom-the-last-dance-preview/ET00422986") {\n          let xhr = new XMLHttpRequest();\n          xhr.open("GET", "https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=b65f8d24-2406-4fb9-aae1-a5d35464b76c");\n          xhr.send();\n\t\t  if(\'prod_desktop_hp_carousel_5\'){\n              window.parent.BMSSDK.fireImpression("prod_desktop_hp_carousel_5")\n        \t}\n          window.open("https://in.bookmyshow.com/movies/venom-the-last-dance-preview/ET00422986");\n        }\n      }\n\t  if (!\'https://in.bookmyshow.com/movies/venom-the-last-dance-preview/ET00422986\') {\n        var imgId = document.getElementById("js-promotion-banner");\n        if (imgId) {\n          imgId.style.cursor = "default";\n        }\n      }\n    \u003c/script\u003e\n  \u003c/body\u003e\n\u003c/html\u003e',
-      duration: 3000,
-      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=b65f8d24-2406-4fb9-aae1-a5d35464b76c",
-      position: 5,
+export const ADS_TECH_BANNER_WEB = {
+  id: "AD_TECH_BANNER_WEB",
+  adtechId: "AD_HOME_BANNER_CARD",
+  type: "advertisement",
+  isSticky: false,
+  styleId: "-130514066956528765",
+  matchMaxCardHeight: false,
+  cards: [
+    {
+      adtype: "DISPLAY",
+      reqid: "b65f8d24-2406-4fb9-aae1-a5d35464b76c",
+      adunitcode: "prod_desktop_hp_carousel_5",
+      size: "SIZE_FLUID",
+      assets: {
+        adm: '\u003chtml\u003e\n  \u003chead\u003e\n    \u003cstyle\u003e\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n        border-radius: 10px;\n        cursor: pointer;\n      }\n    \u003c/style\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003cimg\n      id="js-promotion-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744000092318_venompreviewweb.jpg"\n      alt="promotion-banner"\n    /\u003e\n    \u003cscript\u003e\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/movies/venom-the-last-dance-preview/ET00422986") {\n          let xhr = new XMLHttpRequest();\n          xhr.open("GET", "https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=b65f8d24-2406-4fb9-aae1-a5d35464b76c");\n          xhr.send();\n\t\t  if(\'prod_desktop_hp_carousel_5\'){\n              window.parent.BMSSDK.fireImpression("prod_desktop_hp_carousel_5")\n        \t}\n          window.open("https://in.bookmyshow.com/movies/venom-the-last-dance-preview/ET00422986");\n        }\n      }\n\t  if (!\'https://in.bookmyshow.com/movies/venom-the-last-dance-preview/ET00422986\') {\n        var imgId = document.getElementById("js-promotion-banner");\n        if (imgId) {\n          imgId.style.cursor = "default";\n        }\n      }\n    \u003c/script\u003e\n  \u003c/body\u003e\n\u003c/html\u003e',
+        duration: 3000,
+        iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=b65f8d24-2406-4fb9-aae1-a5d35464b76c",
+        position: 5,
+      },
+      ext: {
+        thirdpartyclicktracker: "",
+        thirdpartyimpressiontracker: "",
+      },
     },
-    ext: {
-      thirdpartyclicktracker: "",
-      thirdpartyimpressiontracker: "",
+    {
+      adtype: "DISPLAY",
+      reqid: "e73d5e97-128b-489c-81de-4b311d49d629",
+      adunitcode: "prod_desktop_hp_carousel_3",
+      size: "SIZE_FLUID",
+      assets: {
+        adm: '\u003chtml\u003e\n  \u003chead\u003e\n    \u003cstyle\u003e\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n        border-radius: 10px;\n        cursor: pointer;\n      }\n    \u003c/style\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003cimg\n      id="js-promotion-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743487489176_gunsroseswebcreative.jpg"\n      alt="promotion-banner"\n    /\u003e\n    \u003cscript\u003e\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/events/guns-n-roses-india-2025/ET00437140") {\n          let xhr = new XMLHttpRequest();\n          xhr.open("GET", "https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=e73d5e97-128b-489c-81de-4b311d49d629");\n          xhr.send();\n\t\t  if(\'prod_desktop_hp_carousel_3\'){\n              window.parent.BMSSDK.fireImpression("prod_desktop_hp_carousel_3")\n        \t}\n          window.open("https://in.bookmyshow.com/events/guns-n-roses-india-2025/ET00437140");\n        }\n      }\n\t  if (!\'https://in.bookmyshow.com/events/guns-n-roses-india-2025/ET00437140\') {\n        var imgId = document.getElementById("js-promotion-banner");\n        if (imgId) {\n          imgId.style.cursor = "default";\n        }\n      }\n    \u003c/script\u003e\n  \u003c/body\u003e\n\u003c/html\u003e',
+        duration: 3000,
+        iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=e73d5e97-128b-489c-81de-4b311d49d629",
+        position: 3,
+      },
+      ext: {
+        thirdpartyclicktracker: "",
+        thirdpartyimpressiontracker: "",
+      },
     },
-  },
-  {
-    adtype: "DISPLAY",
-    reqid: "e73d5e97-128b-489c-81de-4b311d49d629",
-    adunitcode: "prod_desktop_hp_carousel_3",
-    size: "SIZE_FLUID",
-    assets: {
-      adm: '\u003chtml\u003e\n  \u003chead\u003e\n    \u003cstyle\u003e\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n        border-radius: 10px;\n        cursor: pointer;\n      }\n    \u003c/style\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003cimg\n      id="js-promotion-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743487489176_gunsroseswebcreative.jpg"\n      alt="promotion-banner"\n    /\u003e\n    \u003cscript\u003e\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/events/guns-n-roses-india-2025/ET00437140") {\n          let xhr = new XMLHttpRequest();\n          xhr.open("GET", "https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=e73d5e97-128b-489c-81de-4b311d49d629");\n          xhr.send();\n\t\t  if(\'prod_desktop_hp_carousel_3\'){\n              window.parent.BMSSDK.fireImpression("prod_desktop_hp_carousel_3")\n        \t}\n          window.open("https://in.bookmyshow.com/events/guns-n-roses-india-2025/ET00437140");\n        }\n      }\n\t  if (!\'https://in.bookmyshow.com/events/guns-n-roses-india-2025/ET00437140\') {\n        var imgId = document.getElementById("js-promotion-banner");\n        if (imgId) {\n          imgId.style.cursor = "default";\n        }\n      }\n    \u003c/script\u003e\n  \u003c/body\u003e\n\u003c/html\u003e',
-      duration: 3000,
-      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=e73d5e97-128b-489c-81de-4b311d49d629",
-      position: 3,
+    {
+      adtype: "DISPLAY",
+      reqid: "a88eb57a-8912-47be-b6f7-951a1aad3d35",
+      adunitcode: "prod_desktop_hp_carousel_4",
+      size: "SIZE_FLUID",
+      assets: {
+        adm: '\u003chtml\u003e\n  \u003chead\u003e\n    \u003cstyle\u003e\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n        border-radius: 10px;\n        cursor: pointer;\n      }\n    \u003c/style\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003cimg\n      id="js-promotion-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744264313617_bannerweb.jpeg"\n      alt="promotion-banner"\n    /\u003e\n    \u003cscript\u003e\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/plays/peppa-pig-adventure-live/ET00405392") {\n          let xhr = new XMLHttpRequest();\n          xhr.open("GET", "https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=a88eb57a-8912-47be-b6f7-951a1aad3d35");\n          xhr.send();\n\t\t  if(\'prod_desktop_hp_carousel_4\'){\n              window.parent.BMSSDK.fireImpression("prod_desktop_hp_carousel_4")\n        \t}\n          window.open("https://in.bookmyshow.com/plays/peppa-pig-adventure-live/ET00405392");\n        }\n      }\n\t  if (!\'https://in.bookmyshow.com/plays/peppa-pig-adventure-live/ET00405392\') {\n        var imgId = document.getElementById("js-promotion-banner");\n        if (imgId) {\n          imgId.style.cursor = "default";\n        }\n      }\n    \u003c/script\u003e\n  \u003c/body\u003e\n\u003c/html\u003e',
+        duration: 3000,
+        iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=a88eb57a-8912-47be-b6f7-951a1aad3d35",
+        position: 4,
+      },
+      ext: {
+        thirdpartyclicktracker: "",
+        thirdpartyimpressiontracker: "",
+      },
     },
-    ext: {
-      thirdpartyclicktracker: "",
-      thirdpartyimpressiontracker: "",
+    {
+      adtype: "DISPLAY",
+      reqid: "bfd7901c-0a58-4fad-936c-fa8ba04319aa",
+      adunitcode: "prod_desktop_hp_carousel_1",
+      size: "SIZE_FLUID",
+      assets: {
+        adm: '\u003chtml\u003e\n  \u003chead\u003e\n    \u003cstyle\u003e\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n        border-radius: 10px;\n        cursor: pointer;\n      }\n    \u003c/style\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003cimg\n      id="js-promotion-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1726037613244_playcardnewweb.jpg"\n      alt="promotion-banner"\n    /\u003e\n    \u003cscript\u003e\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/play-credit-card?ad=homepagecarousel") {\n          let xhr = new XMLHttpRequest();\n          xhr.open("GET", "https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=bfd7901c-0a58-4fad-936c-fa8ba04319aa");\n          xhr.send();\n\t\t  if(\'prod_desktop_hp_carousel_1\'){\n              window.parent.BMSSDK.fireImpression("prod_desktop_hp_carousel_1")\n        \t}\n          window.open("https://in.bookmyshow.com/play-credit-card?ad=homepagecarousel");\n        }\n      }\n\t  if (!\'https://in.bookmyshow.com/play-credit-card?ad=homepagecarousel\') {\n        var imgId = document.getElementById("js-promotion-banner");\n        if (imgId) {\n          imgId.style.cursor = "default";\n        }\n      }\n    \u003c/script\u003e\n  \u003c/body\u003e\n\u003c/html\u003e',
+        duration: 3000,
+        iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=bfd7901c-0a58-4fad-936c-fa8ba04319aa",
+        position: 1,
+      },
+      ext: {
+        thirdpartyclicktracker: "",
+        thirdpartyimpressiontracker: "",
+      },
     },
-  },
-  {
-    adtype: "DISPLAY",
-    reqid: "a88eb57a-8912-47be-b6f7-951a1aad3d35",
-    adunitcode: "prod_desktop_hp_carousel_4",
-    size: "SIZE_FLUID",
-    assets: {
-      adm: '\u003chtml\u003e\n  \u003chead\u003e\n    \u003cstyle\u003e\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n        border-radius: 10px;\n        cursor: pointer;\n      }\n    \u003c/style\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003cimg\n      id="js-promotion-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744264313617_bannerweb.jpeg"\n      alt="promotion-banner"\n    /\u003e\n    \u003cscript\u003e\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/plays/peppa-pig-adventure-live/ET00405392") {\n          let xhr = new XMLHttpRequest();\n          xhr.open("GET", "https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=a88eb57a-8912-47be-b6f7-951a1aad3d35");\n          xhr.send();\n\t\t  if(\'prod_desktop_hp_carousel_4\'){\n              window.parent.BMSSDK.fireImpression("prod_desktop_hp_carousel_4")\n        \t}\n          window.open("https://in.bookmyshow.com/plays/peppa-pig-adventure-live/ET00405392");\n        }\n      }\n\t  if (!\'https://in.bookmyshow.com/plays/peppa-pig-adventure-live/ET00405392\') {\n        var imgId = document.getElementById("js-promotion-banner");\n        if (imgId) {\n          imgId.style.cursor = "default";\n        }\n      }\n    \u003c/script\u003e\n  \u003c/body\u003e\n\u003c/html\u003e',
-      duration: 3000,
-      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=a88eb57a-8912-47be-b6f7-951a1aad3d35",
-      position: 4,
+  ],
+};
+
+export const BOTTOM_NAVIGATION_TABS = {
+  defaultSelected: "home",
+  bgColor: "#FFFFFF",
+  tabs: [
+    {
+      id: "home",
+      icon: {
+        defaultUrl:
+          "https://assets-in.bmscdn.com/discovery-catalog/collections/home-default-collection-202302270255.png",
+        selectedUrl:
+          "https://assets-in.bmscdn.com/discovery-catalog/collections/home-selected-collection-202302270255.png",
+      },
+      label: {
+        text: "Home",
+        color: "#666666",
+      },
+      cta: {
+        type: "embed",
+        url: "https://in.bookmyshow.com/explore/home/",
+        analytics: {
+          id: "home",
+          schema_version: "3.0",
+          in_widget_position: 1,
+          widget_id: "home",
+          title: "Home",
+          event: "gtm_std_event",
+          event_name: "tab_clicked",
+          event_type: "click",
+          region_code: "BANG",
+          label: "home",
+          type: "bottom_navigation_bar",
+        },
+      },
+      bgImage: "",
+      navBar: true,
+      header: {
+        bgColor: "#FFFFFF",
+        statusBar: {
+          theme: "dark",
+          bgColor: "#F5F5F5",
+        },
+        title: {
+          text: "It All Starts Here",
+          color: "#333333",
+        },
+        subtitle: {
+          text: "",
+          color: "#DC354B",
+        },
+        buttons: [
+          {
+            id: "headerSearch",
+            iconTintColor: "#000000",
+          },
+          {
+            id: "headerNotificationBell",
+            iconTintColor: "#000000",
+          },
+          {
+            id: "headerQRScanner",
+            iconTintColor: "#000000",
+          },
+        ],
+        bgImage: "",
+      },
     },
-    ext: {
-      thirdpartyclicktracker: "",
-      thirdpartyimpressiontracker: "",
+    {
+      id: "movies",
+      icon: {
+        defaultUrl:
+          "https://assets-in.bmscdn.com/discovery-catalog/icons/movies-default-202503250344.png",
+        selectedUrl:
+          "https://assets-in.bmscdn.com/discovery-catalog/icons/movies-selected-202503250344.png",
+      },
+      label: {
+        text: "Movies",
+        color: "#666666",
+      },
+      cta: {
+        type: "embed",
+        url: "https://in.bookmyshow.com/explore/movies",
+        analytics: {
+          id: "movies",
+          schema_version: "3.0",
+          in_widget_position: 2,
+          widget_id: "movies",
+          title: "Movies",
+          event: "gtm_std_event",
+          event_name: "tab_clicked",
+          event_type: "click",
+          region_code: "BANG",
+          label: "movies",
+          type: "bottom_navigation_bar",
+        },
+      },
+      bgImage: "",
+      navBar: false,
+      header: {
+        bgColor: "#FFFFFF",
+        statusBar: {
+          theme: "dark",
+          bgColor: "#F5F5F5",
+        },
+        title: {
+          text: "Now Showing",
+          color: "#333333",
+        },
+        subtitle: {
+          text: "",
+          color: "#666666",
+        },
+        buttons: [
+          {
+            id: "headerSearch",
+            iconTintColor: "#000000",
+          },
+        ],
+        bgImage: "",
+      },
     },
-  },
-  {
-    adtype: "DISPLAY",
-    reqid: "bfd7901c-0a58-4fad-936c-fa8ba04319aa",
-    adunitcode: "prod_desktop_hp_carousel_1",
-    size: "SIZE_FLUID",
-    assets: {
-      adm: '\u003chtml\u003e\n  \u003chead\u003e\n    \u003cstyle\u003e\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      img {\n        position: absolute;\n        object-fit: fill;\n        width: 100%;\n        height: 100%;\n        max-width: 100%;\n        border-radius: 10px;\n        cursor: pointer;\n      }\n    \u003c/style\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003cimg\n      id="js-promotion-banner"\n      loading="lazy"\n      onclick="handleBannerClick(event)"\n      src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1726037613244_playcardnewweb.jpg"\n      alt="promotion-banner"\n    /\u003e\n    \u003cscript\u003e\n      function handleBannerClick(event) {\n        event.preventDefault();\n        if ("https://in.bookmyshow.com/play-credit-card?ad=homepagecarousel") {\n          let xhr = new XMLHttpRequest();\n          xhr.open("GET", "https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=bfd7901c-0a58-4fad-936c-fa8ba04319aa");\n          xhr.send();\n\t\t  if(\'prod_desktop_hp_carousel_1\'){\n              window.parent.BMSSDK.fireImpression("prod_desktop_hp_carousel_1")\n        \t}\n          window.open("https://in.bookmyshow.com/play-credit-card?ad=homepagecarousel");\n        }\n      }\n\t  if (!\'https://in.bookmyshow.com/play-credit-card?ad=homepagecarousel\') {\n        var imgId = document.getElementById("js-promotion-banner");\n        if (imgId) {\n          imgId.style.cursor = "default";\n        }\n      }\n    \u003c/script\u003e\n  \u003c/body\u003e\n\u003c/html\u003e',
-      duration: 3000,
-      iurl: "https://adtech-events.bookmyshow.com/adevent/v2/imp?reqid=bfd7901c-0a58-4fad-936c-fa8ba04319aa",
-      position: 1,
+    {
+      id: "events",
+      icon: {
+        defaultUrl:
+          "https://assets-in.bmscdn.com/discovery-catalog/icons/le-default-202503250344.png",
+        selectedUrl:
+          "https://assets-in.bmscdn.com/discovery-catalog/icons/le-selected-202503250344.png",
+        highlightUrl:
+          "https://assets-in.bmscdn.com/discovery-catalog/icons/le-notif-dot-202503211146.png",
+      },
+      label: {
+        text: "Live Events",
+        color: "#666666",
+      },
+      cta: {
+        type: "embed",
+        url: "https://in.bookmyshow.com/explore/c/events",
+        analytics: {
+          id: "events",
+          schema_version: "3.0",
+          in_widget_position: 3,
+          widget_id: "events",
+          title: "Live Events",
+          event: "gtm_std_event",
+          event_name: "tab_clicked",
+          event_type: "click",
+          region_code: "BANG",
+          label: "events",
+          type: "bottom_navigation_bar",
+        },
+      },
+      bgImage: "",
+      navBar: false,
+      header: {
+        bgColor: "#FFFFFF",
+        statusBar: {
+          theme: "dark",
+          bgColor: "#F5F5F5",
+        },
+        title: {
+          text: "Experience begins here",
+          color: "#333333",
+        },
+        subtitle: {
+          text: "",
+          color: "#666666",
+        },
+        buttons: [
+          {
+            id: "headerSearch",
+            iconTintColor: "#000000",
+          },
+        ],
+        bgImage: "",
+      },
     },
-    ext: {
-      thirdpartyclicktracker: "",
-      thirdpartyimpressiontracker: "",
+    {
+      id: "profile",
+      icon: {
+        defaultUrl:
+          "https://assets-in.bmscdn.com/discovery-catalog/collections/profile-default-collection-202302270255.png",
+        selectedUrl:
+          "https://assets-in.bmscdn.com/discovery-catalog/collections/profile-selected-collection-202302270255.png",
+      },
+      label: {
+        text: "Profile",
+        color: "#666666",
+      },
+      cta: {
+        type: "embed",
+        url: "https://in.bookmyshow.com/profile",
+        analytics: {
+          id: "profile",
+          schema_version: "3.0",
+          in_widget_position: 4,
+          widget_id: "profile",
+          title: "Profile",
+          event: "gtm_std_event",
+          event_name: "tab_clicked",
+          event_type: "click",
+          region_code: "BANG",
+          label: "profile",
+          type: "bottom_navigation_bar",
+        },
+      },
+      bgImage: "",
+      navBar: true,
+      header: {
+        bgColor: "#FFFFFF",
+        statusBar: {
+          theme: "dark",
+          bgColor: "#F5F5F5",
+        },
+        title: {
+          text: "",
+          color: "#333333",
+        },
+        subtitle: {
+          text: "",
+          color: "#666666",
+        },
+        buttons: [],
+        bgImage: "",
+      },
     },
-  },
-];
+  ],
+};
