@@ -1275,8 +1275,11 @@ const CarouselComp = ({ data = TVOD_SHOWCASE }) => {
         className="p-3"
         plugins={[
           Autoplay({
-            delay: 3000,
-            playOnInit: true,
+            delay: 3000, // Adjust delay time (in milliseconds) between slides
+            stopOnInteraction: false, // Stop autoplay when user interacts with carousel
+            stopOnMouseEnter: false, // Optional: stop on mouse enter
+            playOnInit: true, // Start autoplay immediately
+            rootNode: (emblaRoot) => emblaRoot,
           }),
         ]}
       >
@@ -1301,11 +1304,11 @@ const CarouselComp = ({ data = TVOD_SHOWCASE }) => {
         <CarouselNext className="absolute right-0 rounded-l-md rounded-r-none top-1/2 -translate-y-1/2 z-10 w-[42px] h-[50px] bg-black/50 hover:bg-black/50 active:bg-black/50 border-none p-1" />
       </Carousel>
 
-      <div className="flex justify-center gap-2 absolute bottom-4 left-0 right-0">
+      <div className="flex justify-center gap-1.5 absolute bottom-4 left-0 right-0">
         {data.cards.map((_, index) => (
           <button
             key={index}
-            className={`w-2 h-2 rounded-full transition-colors ${
+            className={`w-[6px] h-[6px] rounded-full transition-colors ${
               current === index + 1 ? "bg-white" : "bg-white/50"
             }`}
             aria-label={`Go to slide ${index + 1}`}

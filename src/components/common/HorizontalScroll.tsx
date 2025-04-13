@@ -204,25 +204,25 @@ const HorizontalScroll = ({
     <div style={getHorizontalScrollStyle(data, styles)}>
       {/* Header Section */}
       {data.title || data.subtitle ? (
-        <div className="flex justify-between items-center">
-          <div>
+        <div className="flex flex-col items-start">
+          <div className="w-full justify-between items-center flex">
             <h2 className="text-xl font-semibold" style={titleStyle}>
               {data.title?.components[0]?.text || ""}
             </h2>
-            <p className="text-sm mt-1" style={subtitleStyle}>
-              {data.subtitle?.components[0].text || ""}
-            </p>
-          </div>
 
-          {data.cta && (
-            <a
-              href={data.cta.url}
-              className="text-sm hover:underline"
-              style={ctaStyle}
-            >
-              {data.cta.label.components[0].text}
-            </a>
-          )}
+            {data.cta && (
+              <a
+                href={data.cta.url}
+                className="text-sm hover:underline"
+                style={ctaStyle}
+              >
+                {data.cta.label.components[0].text}
+              </a>
+            )}
+          </div>
+          <p className="text-sm" style={subtitleStyle}>
+            {data.subtitle?.components[0].text || ""}
+          </p>
         </div>
       ) : null}
 
@@ -275,7 +275,7 @@ const HorizontalScroll = ({
                       maxWidth: `${
                         String(data.id).includes("_WEB")
                           ? `${100 / itemsPerRow}vw`
-                          : "400px"
+                          : "300px"
                       }`,
                       maxHeight: "100%",
                     }}

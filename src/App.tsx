@@ -24,6 +24,8 @@ import {
   TVOD_SHOWCASE,
   ULTIMATE_EVENTS_LIST_COLLECTIONS_IOS_MWEB_VARIANT,
 } from "./utils/Content";
+import HeaderSubWeb from "./components/HeaderSubWeb";
+import HeaderWeb from "./components/HeaderWeb";
 
 function App() {
   const [mobileMode, setMobileMode] = useState(window.innerWidth < 480);
@@ -94,6 +96,8 @@ function App() {
         </>
       ) : (
         <>
+          <HeaderWeb />
+          <HeaderSubWeb />
           <Advertisement ads={ADS_TECH_BANNER_WEB} />
           <div className="w-full h-full flex flex-col items-center justify-center pt-5 px-[90px]">
             <HorizontalScroll data={TOP_MOVIES_WEB} />

@@ -47,13 +47,14 @@ const getAdsContainerStyle = (styleId: string): React.CSSProperties => {
   }
 
   const containerStyle = {
-    padding: String(style.padding)
-      .split(",")
-      .map((val) => `${val}px`)
-      .join(" "),
+    // padding: String(style.padding)
+    //   .split(",")
+    //   .map((val) => `${val}px`)
+    //   .join(" "),
+    padding: "10px",
   };
 
-  console.log(containerStyle);
+  console.log(containerStyle, style);
 
   return containerStyle;
 };
@@ -134,7 +135,7 @@ const Advertisement: React.FC<AdvertisementProps> = ({ ads }) => {
           {imageUrls.map((_, index) => (
             <button
               key={index}
-              className={`w-2 h-2 rounded-full transition-colors ${
+              className={`w-[7px] h-[7px] rounded-full transition-colors ${
                 current === index + 1 ? "bg-white" : "bg-white/50"
               }`}
               aria-label={`Go to slide ${index + 1}`}

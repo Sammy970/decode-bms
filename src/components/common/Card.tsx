@@ -121,7 +121,7 @@ const Card = ({
             className="justify-evenly items-center gap-1"
           >
             {/* image */}
-            <div className="w-[60%]">
+            <div className="w-[70%]">
               <img
                 src={imageUrl}
                 alt={altText}
@@ -225,7 +225,7 @@ const Card = ({
               </div>
             )}
           </div>
-          {metaImages && (
+          {metaImages && metaImages?.length > 0 && (
             <div className="flex flex-row gap-2 mt-2 w-full">
               {metaImages.map((metaImage, index) => {
                 const metaImageStyle = styles.find(
@@ -245,7 +245,7 @@ const Card = ({
               })}
             </div>
           )}
-          {text && (
+          {text && text?.length > 0 && (
             <div style={textContainerStyle}>
               {text.map((textItem, index) => {
                 const textStyle = styles.find((s) => s.id === textItem.styleId);
